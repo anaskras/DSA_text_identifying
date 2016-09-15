@@ -20,16 +20,20 @@ public class PreparingDocuments {
         }
         StringBuffer outTokens = new StringBuffer();
         int numberOfDocs = 0;
-        for (int i = 0; i < tokens.size()-docSize; i += docSize) {
-            numberOfDocs++;
 
-            String tempPath = "src/docs/" + authorID + "/" + bookID + "/";
-            try {
-                Files.createDirectories(Paths.get(tempPath));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            String pathFileName = tempPath + authorID + "-" + bookID + "-" + numberOfDocs + ".txt";
+        String tempPath = "src/docs/" + authorID + "/" + bookID + "/";
+        try {
+            Files.createDirectories(Paths.get(tempPath));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        String pathBookFileName = tempPath + authorID + "-" + bookID;
+        WriteFile.fromArrayList(pathBookFileName, tokens, 0, tokens.size());
+
+        for (int i = 0; i < tokens.size() - docSize; i += docSize) {
+            numberOfDocs++;
+            String pathFileName = tempPath + authorID + "-" + bookID + "-" + numberOfDocs;
             WriteFile.fromArrayList(pathFileName, tokens, i, docSize);
         }
     }
