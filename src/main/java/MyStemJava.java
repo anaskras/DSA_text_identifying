@@ -20,7 +20,9 @@ public class MyStemJava {
             for (Info info : result) {
                 // System.out.println(info.initial() + " -> " + info.lex() + " | " + info.rawResponse());
                 String[] temp = info.toString().split("\"");
-                output.add(temp[9]);
+                if (temp.length >9 && !temp[9].equals("bastard")) {
+                    output.add(temp[9]);
+                }
             }
         }
         return output;

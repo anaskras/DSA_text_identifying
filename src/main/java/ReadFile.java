@@ -5,11 +5,13 @@ import java.util.Scanner;
 public class ReadFile {
     public static ArrayList<String> toArrayList(String filename)  {
         ArrayList<String> text = new ArrayList<String>();
-        Scanner in = null;
         try {
-            in = new Scanner(new File(filename));
+            Scanner in = new Scanner(new File(filename));
             while (in.hasNext()) {
-                text.add(in.next());
+                String temp = in.nextLine();
+                if (!temp.equals("")) {
+                    text.add(temp);
+                }
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();

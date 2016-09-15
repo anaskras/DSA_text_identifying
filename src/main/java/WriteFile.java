@@ -16,8 +16,8 @@ public class WriteFile {
 
     public static void fromArrayList(String fileName, ArrayList<String> outText, int start, int end) {
         try {
-            FileWriter fw = new FileWriter(fileName, true);
-            for (int i = start; i < end; i++) {
+            FileWriter fw = new FileWriter(fileName, false);
+            for (int i = start; i < start + end; i++) {
                 fw.write(outText.get(i) + " ");
             }
             fw.close();
