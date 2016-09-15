@@ -25,4 +25,15 @@ public class MyStemJava {
         }
         return output;
     }
+
+    public ArrayList<String> toStem(String input) throws MyStemApplicationException {
+        ArrayList<String> output = new ArrayList<String>();
+        Iterable<Info> result = JavaConversions.asJavaIterable(mystemAnalyzer.analyze(Request.apply(input)).info().toIterable());
+        for (Info info : result) {
+            // System.out.println(info.initial() + " -> " + info.lex() + " | " + info.rawResponse());
+            String[] temp = info.toString().split("\"");
+            output.add(temp[9]);
+        }
+        return output;
+    }
 }
