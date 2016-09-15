@@ -12,7 +12,7 @@ public class PreparingDocuments {
         ArrayList<String> tokens = stemJava.toStem(fileStrings);
         StringBuffer outTokens = new StringBuffer();
         int numberOfDocs = 0;
-        for (int i = 0; i < tokens.size(); i += docSize) {
+        for (int i = 0; i < tokens.size()-docSize; i += docSize) {
             numberOfDocs++;
             String filename = authorID + "-" + bookID + "-0" + numberOfDocs;
             WriteFile.fromArrayList(filename, tokens, i, docSize);
