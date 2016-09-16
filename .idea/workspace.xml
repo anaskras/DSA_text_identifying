@@ -2,13 +2,413 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea9ff3ab-80b8-4bd2-a95e-48dcffff9e5d" name="Default" comment="success file separation and path creation">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/DoNotTouchThisIsLibrarySettings.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/Library.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/TextSample.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/path.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/path.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/path.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/path.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/path.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/path.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/path.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/path.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/path.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/path.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/path.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/path.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/path.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/path.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/path.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/path.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/1-1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/1-2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/1-3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/1-4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/1-5.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/1-6.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/1-7.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/1-8.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/1-9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/Books.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/2/2-1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/2/2-2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/2/2-3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/2/2-4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/2/Books.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/3/3-1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/3/3-2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/3/Books.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/Authors.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyStemJava.java" afterPath="$PROJECT_DIR$/src/main/java/MyStemJava.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PreparingDocuments.java" afterPath="$PROJECT_DIR$/src/main/java/PreparingDocuments.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ReadFile.java" afterPath="$PROJECT_DIR$/src/main/java/ReadFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/WriteFile.java" afterPath="$PROJECT_DIR$/src/main/java/WriteFile.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-1-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-1-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-1.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-10-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-10-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-10.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-11-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-11-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-11.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-11.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-12-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-12-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-12.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-12.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-13-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-13-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-13.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-13.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-14-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-14-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-14.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-14.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-15-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-15-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-15.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-15.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-16-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-16-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-16.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-16.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-17-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-17-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-17.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-17.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-18-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-18-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-18.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-18.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-19-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-19-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-19.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-19.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-2-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-2-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-2.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-20-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-20-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-20.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-20.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-21-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-21-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-21.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-21.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-22-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-22-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-22.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-22.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-23-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-23-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-23.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-23.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-24-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-24-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-24.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-24.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-25-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-25-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-25.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-25.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-26-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-26-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-26.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-26.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-3-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-3-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-3.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-4-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-4-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-4.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-5-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-5-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-5.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-6-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-6-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-6.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-7-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-7-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-7.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-8-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-8-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-8.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-9-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-9-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-9.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/1/1-1.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/1-1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-1-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-1-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-1.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-10-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-10-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-10.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-2-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-2-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-2.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-3-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-3-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-3.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-4-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-4-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-4.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-5-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-5-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-5.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-6-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-6-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-6.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-7-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-7-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-7.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-8-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-8-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-8.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-9-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-9-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-9.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/2/1-2.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/1-2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-1-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-1-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-1.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-10-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-10-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-10.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-11-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-11-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-11.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-11.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-2-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-2-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-2.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-3-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-3-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-3.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-4-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-4-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-4.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-5-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-5-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-5.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-6-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-6-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-6.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-7-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-7-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-7.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-8-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-8-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-8.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-9-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-9-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-9.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/3/1-3.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/1-3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-1-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-1-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-1.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-10-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-10-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-10.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-11-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-11-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-11.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-11.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-2-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-2-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-2.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-3-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-3-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-3.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-4-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-4-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-4.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-5-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-5-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-5.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-6-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-6-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-6.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-7-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-7-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-7.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-8-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-8-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-8.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-9-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-9-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-9.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/4/1-4.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/1-4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-1-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-1-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-1.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-10-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-10-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-10.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-2-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-2-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-2.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-3-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-3-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-3.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-4-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-4-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-4.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-5-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-5-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-5.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-6-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-6-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-6.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-7-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-7-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-7.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-8-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-8-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-8.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-9-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-9-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-9.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/5/1-5.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/1-5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-1-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-1-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-1.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-10-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-10-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-10.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-11-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-11-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-11.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-11.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-2-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-2-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-2.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-3-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-3-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-3.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-4-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-4-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-4.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-5-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-5-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-5.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-6-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-6-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-6.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-7-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-7-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-7.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-8-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-8-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-8.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-9-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-9-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-9.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/6/1-6.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/1-6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-1-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-1-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-1.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-10-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-10-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-10.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-11-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-11-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-11.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-11.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-12-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-12-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-12.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-12.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-13-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-13-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-13.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-13.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-2-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-2-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-2.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-3-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-3-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-3.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-4-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-4-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-4.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-5-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-5-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-5.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-6-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-6-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-6.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-7-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-7-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-7.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-8-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-8-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-8.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-9-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-9-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-9.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/1/7/1-7.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-1-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-1-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-1.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-10-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-10-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-10.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-11-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-11-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-11.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-11.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-12-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-12-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-12.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-12.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-13-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-13-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-13.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-13.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-14-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-14-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-14.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-14.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-15-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-15-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-15.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-15.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-16-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-16-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-16.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-16.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-17-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-17-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-17.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-17.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-2-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-2-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-2.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-3-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-3-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-3.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-4-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-4-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-4.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-5-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-5-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-5.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-6-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-6-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-6.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-7-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-7-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-7.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-8-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-8-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-8.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-9-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-9-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-9.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/1/2-1.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/2-1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-1-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-1-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-1.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-10-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-10-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-10.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-11-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-11-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-11.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-11.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-12-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-12-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-12.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-12.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-13-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-13-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-13.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-13.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-14-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-14-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-14.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-14.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-15-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-15-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-15.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-15.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-16-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-16-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-16.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-16.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-17-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-17-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-17.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-17.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-18-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-18-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-18.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-18.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-19-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-19-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-19.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-19.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-2-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-2-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-2.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-20-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-20-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-20.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-20.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-3-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-3-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-3.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-4-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-4-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-4.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-5-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-5-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-5.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-6-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-6-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-6.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-7-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-7-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-7.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-8-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-8-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-8.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-9-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-9-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-9.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/2/2-2.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/2-2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-1-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-1-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-1.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-10-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-10-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-10.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-11-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-11-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-11.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-11.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-12-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-12-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-12.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-12.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-13-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-13-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-13.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-13.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-14-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-14-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-14.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-14.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-15-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-15-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-15.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-15.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-16-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-16-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-16.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-16.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-17-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-17-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-17.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-17.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-18-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-18-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-18.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-18.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-19-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-19-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-19.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-19.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-2-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-2-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-2.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-20-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-20-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-20.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-20.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-3-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-3-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-3.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-4-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-4-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-4.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-5-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-5-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-5.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-6-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-6-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-6.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-7-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-7-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-7.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-8-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-8-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-8.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-9-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-9-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-9.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/3/2-3.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/2-3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-1-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-1-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-1.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-10-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-10-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-10.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-11-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-11-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-11.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-11.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-2-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-2-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-2.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-3-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-3-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-3.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-4-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-4-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-4.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-5-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-5-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-5.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-6-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-6-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-6.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-7-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-7-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-7.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-8-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-8-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-8.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-9-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-9-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-9.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/2/4/2-4.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/2-4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-1-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-1-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-1.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-10-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-10-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-10.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-11-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-11-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-11.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-11.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-2-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-2-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-2.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-3-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-3-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-3.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-4-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-4-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-4.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-5-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-5-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-5.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-5.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-6-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-6-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-6.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-6.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-7-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-7-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-7.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-7.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-8-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-8-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-8.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-8.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-9-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-9-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-9.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-9.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1-map.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1-map.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/docs/3/1/3-1.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1.txt" />
     </list>
     <ignored path="DSA_text_identifying.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,47 +431,112 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test.txt">
+      <file leaf-file-name="Authors.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/Authors.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="8148" column="0" selection-start-line="8148" selection-start-column="0" selection-end-line="8148" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <file leaf-file-name="Books.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/3/Books.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+            <state relative-caret-position="51">
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="PreparingDocuments.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/PreparingDocuments.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Library.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/library/Library.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Books.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/Books.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1-7.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/docs/1/7/1-7.txt">
+      <file leaf-file-name="DoNotTouchThisIsLibrarySettings.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/library/DoNotTouchThisIsLibrarySettings.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="2675" selection-start-line="0" selection-start-column="2675" selection-end-line="0" selection-end-column="2675" />
+            <state relative-caret-position="17">
+              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextSample.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/library/TextSample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1054">
+              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2085#2086#0" expanded="true" />
+                <element signature="e#2110#2111#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3-2.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/3/3-2.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16711">
+              <caret line="983" column="0" selection-start-line="983" selection-start-column="0" selection-end-line="983" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="3-1.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/3/3-1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138465">
+              <caret line="8145" column="252" selection-start-line="8145" selection-start-column="252" selection-end-line="8145" selection-end-column="252" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,11 +552,48 @@
         <option value="$PROJECT_DIR$/src/docs/1/1/1-1-18.txt" />
         <option value="$PROJECT_DIR$/src/main/java/ReadFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/MyStemJava.java" />
-        <option value="$PROJECT_DIR$/src/main/java/PreparingDocuments.java" />
         <option value="$PROJECT_DIR$/src/main/java/WriteFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/test.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/docs/path.txt" />
+        <option value="$PROJECT_DIR$/src/docs/1/path.txt" />
+        <option value="$PROJECT_DIR$/src/docs/1/1/path.txt" />
+        <option value="$PROJECT_DIR$/src/docs/1/2/path.txt" />
+        <option value="$PROJECT_DIR$/src/docs/1/3/path.txt" />
+        <option value="$PROJECT_DIR$/src/docs/1/4/path.txt" />
+        <option value="$PROJECT_DIR$/src/docs/1/5/path.txt" />
+        <option value="$PROJECT_DIR$/src/docs/1/6/path.txt" />
+        <option value="$PROJECT_DIR$/src/docs/1/7/path.txt" />
+        <option value="$PROJECT_DIR$/src/docs/2/path.txt" />
+        <option value="$PROJECT_DIR$/src/docs/2/1/path.txt" />
+        <option value="$PROJECT_DIR$/src/docs/2/2/path.txt" />
+        <option value="$PROJECT_DIR$/src/docs/2/3/path.txt" />
+        <option value="$PROJECT_DIR$/src/docs/2/4/path.txt" />
+        <option value="$PROJECT_DIR$/src/docs/3/path.txt" />
+        <option value="$PROJECT_DIR$/src/docs/3/1/path.txt" />
+        <option value="$PROJECT_DIR$/src/sourceTextsTrain/Authors.txt" />
+        <option value="$PROJECT_DIR$/src/sourceTextsTrain/1/1-6.txt" />
+        <option value="$PROJECT_DIR$/src/sourceTextsTrain/1/1-7.txt" />
+        <option value="$PROJECT_DIR$/src/sourceTextsTrain/1/Books.txt" />
+        <option value="$PROJECT_DIR$/src/sourceTextsTrain/1/1-8.txt" />
+        <option value="$PROJECT_DIR$/src/sourceTextsTrain/1/1-9.txt" />
+        <option value="$PROJECT_DIR$/src/sourceTextsTrain/2/2-1.txt" />
+        <option value="$PROJECT_DIR$/src/sourceTextsTrain/2/2-2.txt" />
+        <option value="$PROJECT_DIR$/src/sourceTextsTrain/2/2-3.txt" />
+        <option value="$PROJECT_DIR$/src/sourceTextsTrain/2/Books.txt" />
+        <option value="$PROJECT_DIR$/src/sourceTextsTrain/2/2-4.txt" />
+        <option value="$PROJECT_DIR$/src/sourceTextsTrain/3/3-1.txt" />
+        <option value="$PROJECT_DIR$/src/sourceTextsTrain/3/Books.txt" />
+        <option value="$PROJECT_DIR$/src/sourceTextsTrain/3/3-2.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/Author.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Book.java" />
+        <option value="$PROJECT_DIR$/src/main/java/library/Book.java" />
+        <option value="$PROJECT_DIR$/src/main/java/library/TextSample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/library/Author.java" />
+        <option value="$PROJECT_DIR$/src/main/java/library/DoNotTuchThisIsLibrarySettings.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/PreparingDocuments.java" />
+        <option value="$PROJECT_DIR$/src/main/java/library/Library.java" />
       </list>
     </option>
   </component>
@@ -140,7 +642,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -170,24 +671,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DSA_text_identifying" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DSA_text_identifying" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -245,13 +728,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -261,7 +753,11 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\DSA_text_identifying\src\main\java\library" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\DSA_text_identifying\src\sourceTexts\1" />
       <recent name="D:\GitHub\DSA_text_identifying\.idea" />
     </key>
   </component>
@@ -765,6 +1261,8 @@
       <option name="presentableId" value="Default" />
       <updated>1473955681417</updated>
       <workItem from="1473955694542" duration="7459000" />
+      <workItem from="1474025125556" duration="20037000" />
+      <workItem from="1474068116211" duration="26000" />
     </task>
     <task id="LOCAL-00001" summary="success file separation and path creation">
       <created>1473957083689</created>
@@ -777,21 +1275,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7842000" />
+    <option name="totallyTimeSpent" value="27905000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1604" height="876" extended-state="1" />
+    <frame x="-8" y="-8" width="1604" height="876" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3243607" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35666218" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35639685" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -800,14 +1297,15 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4024226" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4024226" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3243607" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28667563" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -872,7 +1370,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/library/Library.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -881,502 +1387,26 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DSA_text_identifying.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyStemJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30345">
-          <caret line="1785" column="0" selection-start-line="1785" selection-start-column="0" selection-end-line="1785" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#147821#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#23047#23048#0" expanded="false" />
-            <element signature="e#23104#23105#0" expanded="false" />
-            <element signature="e#23453#23454#0" expanded="false" />
-            <element signature="e#23509#23510#0" expanded="false" />
-            <element signature="e#32636#32637#0" expanded="false" />
-            <element signature="e#32683#32684#0" expanded="false" />
-            <element signature="e#45841#45842#0" expanded="false" />
-            <element signature="e#45932#45933#0" expanded="false" />
-            <element signature="e#56746#56747#0" expanded="false" />
-            <element signature="e#56789#56790#0" expanded="false" />
-            <element signature="e#58208#58209#0" expanded="false" />
-            <element signature="e#58257#58258#0" expanded="false" />
-            <element signature="e#58496#58497#0" expanded="false" />
-            <element signature="e#58567#58568#0" expanded="false" />
-            <element signature="e#58809#58810#0" expanded="false" />
-            <element signature="e#58891#58892#0" expanded="false" />
-            <element signature="e#104463#104464#0" expanded="false" />
-            <element signature="e#104523#104524#0" expanded="false" />
-            <element signature="e#112572#112573#0" expanded="false" />
-            <element signature="e#112604#112605#0" expanded="false" />
-            <element signature="e#112898#112899#0" expanded="false" />
-            <element signature="e#112942#112943#0" expanded="false" />
-            <element signature="e#114513#114514#0" expanded="false" />
-            <element signature="e#114550#114551#0" expanded="false" />
-            <element signature="e#114579#114580#0" expanded="false" />
-            <element signature="e#114620#114621#0" expanded="false" />
-            <element signature="e#117160#117161#0" expanded="false" />
-            <element signature="e#117198#117199#0" expanded="false" />
-            <element signature="e#136811#136812#0" expanded="false" />
-            <element signature="e#136896#136897#0" expanded="false" />
-            <element signature="e#139547#139548#0" expanded="false" />
-            <element signature="e#139624#139625#0" expanded="false" />
-            <element signature="e#144390#144391#0" expanded="false" />
-            <element signature="e#144427#144428#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ru/stachek66/nlp/mystem-scala/0.1.4/mystem-scala-0.1.4.jar!/ru/stachek66/nlp/mystem/holding/Factory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="70" selection-start-line="1" selection-start-column="70" selection-end-line="1" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ru/stachek66/nlp/mystem-scala/0.1.4/mystem-scala-0.1.4.jar!/ru/stachek66/nlp/mystem/model/Info.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSA_text_identifying.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSA_text_identifying.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ru/stachek66/nlp/mystem-scala/0.1.4/mystem-scala-0.1.4.jar!/ru/stachek66/nlp/mystem/model/Info.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ru/stachek66/nlp/mystem-scala/0.1.4/mystem-scala-0.1.4.jar!/ru/stachek66/nlp/mystem/holding/Factory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="70" selection-start-line="1" selection-start-column="70" selection-end-line="1" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28934">
-          <caret line="1785" column="0" selection-start-line="1785" selection-start-column="0" selection-end-line="1785" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#147821#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#23047#23048#0" expanded="false" />
-            <element signature="e#23104#23105#0" expanded="false" />
-            <element signature="e#23453#23454#0" expanded="false" />
-            <element signature="e#23509#23510#0" expanded="false" />
-            <element signature="e#32636#32637#0" expanded="false" />
-            <element signature="e#32683#32684#0" expanded="false" />
-            <element signature="e#45841#45842#0" expanded="false" />
-            <element signature="e#45932#45933#0" expanded="false" />
-            <element signature="e#56746#56747#0" expanded="false" />
-            <element signature="e#56789#56790#0" expanded="false" />
-            <element signature="e#58208#58209#0" expanded="false" />
-            <element signature="e#58257#58258#0" expanded="false" />
-            <element signature="e#58496#58497#0" expanded="false" />
-            <element signature="e#58567#58568#0" expanded="false" />
-            <element signature="e#58809#58810#0" expanded="false" />
-            <element signature="e#58891#58892#0" expanded="false" />
-            <element signature="e#104463#104464#0" expanded="false" />
-            <element signature="e#104523#104524#0" expanded="false" />
-            <element signature="e#112572#112573#0" expanded="false" />
-            <element signature="e#112604#112605#0" expanded="false" />
-            <element signature="e#112898#112899#0" expanded="false" />
-            <element signature="e#112942#112943#0" expanded="false" />
-            <element signature="e#114513#114514#0" expanded="false" />
-            <element signature="e#114550#114551#0" expanded="false" />
-            <element signature="e#114579#114580#0" expanded="false" />
-            <element signature="e#114620#114621#0" expanded="false" />
-            <element signature="e#117160#117161#0" expanded="false" />
-            <element signature="e#117198#117199#0" expanded="false" />
-            <element signature="e#136811#136812#0" expanded="false" />
-            <element signature="e#136896#136897#0" expanded="false" />
-            <element signature="e#139547#139548#0" expanded="false" />
-            <element signature="e#139624#139625#0" expanded="false" />
-            <element signature="e#144390#144391#0" expanded="false" />
-            <element signature="e#144427#144428#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/src.zip!/java/lang/StringBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="96" column="20" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#20922#0" expanded="false" />
-            <element signature="e#4139#4140#0" expanded="false" />
-            <element signature="e#4164#4165#0" expanded="false" />
-            <element signature="e#4506#4507#0" expanded="false" />
-            <element signature="e#4537#4538#0" expanded="false" />
-            <element signature="e#5572#5573#0" expanded="false" />
-            <element signature="e#5600#5601#0" expanded="false" />
-            <element signature="e#5656#5657#0" expanded="false" />
-            <element signature="e#5691#5692#0" expanded="false" />
-            <element signature="e#5774#5775#0" expanded="false" />
-            <element signature="e#5827#5828#0" expanded="false" />
-            <element signature="e#5925#5926#0" expanded="false" />
-            <element signature="e#5959#5960#0" expanded="false" />
-            <element signature="e#6615#6616#0" expanded="false" />
-            <element signature="e#6662#6663#0" expanded="false" />
-            <element signature="e#6772#6773#0" expanded="false" />
-            <element signature="e#6823#6824#0" expanded="false" />
-            <element signature="e#13503#13504#0" expanded="false" />
-            <element signature="e#13549#13550#0" expanded="false" />
-            <element signature="e#13729#13730#0" expanded="false" />
-            <element signature="e#13779#13780#0" expanded="false" />
-            <element signature="e#13957#13958#0" expanded="false" />
-            <element signature="e#14007#14008#0" expanded="false" />
-            <element signature="e#18508#18509#0" expanded="false" />
-            <element signature="e#18560#18561#0" expanded="false" />
-            <element signature="e#18912#18913#0" expanded="false" />
-            <element signature="e#18968#18969#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.314/Library.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-          <folding>
-            <marker date="1473963811992" expanded="true" signature="77271:77286" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/1/1-1-18.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1377">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/1/1-1-1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="0" column="1831" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="60473" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyStemJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ReadFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/1/1-1-2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/1/1-1-4.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/1/1-1-4-map.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34430">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/1/1-1-5-map.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="1990" column="4" selection-start-line="1990" selection-start-column="0" selection-end-line="1990" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/1/1-1-6-map.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37859">
-          <caret line="2227" column="6" selection-start-line="2227" selection-start-column="0" selection-end-line="2227" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/1/1-1-26-map.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PreparingDocuments.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WriteFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#666#683#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/1/1-1-1-map.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35751">
-          <caret line="2103" column="0" selection-start-line="2103" selection-start-column="0" selection-end-line="2103" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/1/1-1-2-map.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/1/1-1-3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/1/1-1-3-map.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="1931" column="4" selection-start-line="1931" selection-start-column="0" selection-end-line="1931" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/1/1-1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1593678" selection-start-line="0" selection-start-column="1593678" selection-end-line="0" selection-end-column="1593678" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/1/1-1-map.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4131">
-          <caret line="0" column="12" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/2/1-2-1-map.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/2/1-2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2833" selection-start-line="0" selection-start-column="2833" selection-end-line="0" selection-end-column="2833" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/3/1-3-1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/3/1-3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/6/1-6-11-map.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/6/1-6.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="2142" selection-start-line="0" selection-start-column="2142" selection-end-line="0" selection-end-column="2142" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/6/1-6-1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/6/1-6-map.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-137556">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/10/1-10.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/10/1-10-1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="0" column="1707" selection-start-line="0" selection-start-column="1707" selection-end-line="0" selection-end-column="1707" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/10/1-10-1-map.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/10/1-10-2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/1/7/1-7.txt">
+    <entry file="file://$PROJECT_DIR$/src/docs/1/10/1-10-1-map.txt" />
+    <entry file="file://$PROJECT_DIR$/src/docs/1/10/1-10-2.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/1-7.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="2675" selection-start-line="0" selection-start-column="2675" selection-end-line="0" selection-end-column="2675" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/docs/3/1/3-1.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/3-1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5456">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
+        <state relative-caret-position="138516">
           <caret line="8148" column="0" selection-start-line="8148" selection-start-column="0" selection-end-line="8148" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1393,6 +1423,325 @@
         <state relative-caret-position="272">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/docsTrain/path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/docsTrain/1/path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/docsTrain/2/path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/docsTrain/3/path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/path.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/1-4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/1-5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1683">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/1-3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/1-2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/1-1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MyStemJava.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ReadFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WriteFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#666#683#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/1-7.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="601" column="129" selection-start-line="601" selection-start-column="129" selection-end-line="601" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/1-6.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/1-8.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="545" column="176" selection-start-line="545" selection-start-column="173" selection-end-line="545" selection-end-column="176" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/1-9.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72454">
+          <caret line="4262" column="0" selection-start-line="4262" selection-start-column="0" selection-end-line="4262" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/2/2-1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="7793" column="0" selection-start-line="7793" selection-start-column="0" selection-end-line="7793" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/2/2-2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="8990" column="0" selection-start-line="8990" selection-start-column="0" selection-end-line="8990" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/2/2-3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="5778" column="75" selection-start-line="5778" selection-start-column="75" selection-end-line="5778" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/2/Books.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/2/2-4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="2777" column="0" selection-start-line="2777" selection-start-column="0" selection-end-line="2777" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/3/3-1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138465">
+          <caret line="8145" column="252" selection-start-line="8145" selection-start-column="252" selection-end-line="8145" selection-end-column="252" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/3/3-2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16711">
+          <caret line="983" column="0" selection-start-line="983" selection-start-column="0" selection-end-line="983" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/3/Books.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/Book.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/Author.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/1/Books.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/Authors.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/TextSample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2085#2086#0" expanded="true" />
+            <element signature="e#2110#2111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/DoNotTouchThisIsLibrarySettings.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PreparingDocuments.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/Library.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

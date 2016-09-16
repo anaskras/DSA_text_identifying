@@ -1,0 +1,2 @@
+10000
+selftesting simple 10

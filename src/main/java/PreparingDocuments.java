@@ -1,6 +1,6 @@
 import ru.stachek66.nlp.mystem.holding.MyStemApplicationException;
 
-import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -9,8 +9,8 @@ import java.util.ArrayList;
 
 
 public class PreparingDocuments {
-    public static void makeDocs(String mybookname, int authorID, int bookID, int docSize) {
-        ArrayList<String> fileStrings = ReadFile.toArrayList(mybookname); //read file to an arraylist of lines
+    public static void makeSamplesFromSourceBook(String myBookName, int authorID, int bookID, int docSize) {
+        ArrayList<String> fileStrings = ReadFile.toArrayList(myBookName); //read file to an arraylist of lines
         MyStemJava stemJava = new MyStemJava();
         ArrayList<String> tokens = null;
         try {
@@ -21,7 +21,7 @@ public class PreparingDocuments {
         StringBuffer outTokens = new StringBuffer();
         int numberOfDocs = 0;
 
-        String tempPath = "src/docs/" + authorID + "/" + bookID + "/";
+        String tempPath = "src/docsTrain/" + authorID + "/" + bookID + "/";
         try {
             Files.createDirectories(Paths.get(tempPath));
         } catch (IOException e) {
@@ -36,5 +36,14 @@ public class PreparingDocuments {
             String pathFileName = tempPath + authorID + "-" + bookID + "-" + numberOfDocs;
             WriteFile.fromArrayList(pathFileName, tokens, i, docSize);
         }
+
+        try {
+            FileWriter fw = new FileWriter(tempPath + "path.txt", false);
+            fw.write(numberOfDocs);
+            fw.close();
+        } catch (IOException ioe) {
+            System.err.println("IOException: " + ioe.getMessage());
+        }
     }
+
 }
