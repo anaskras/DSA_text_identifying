@@ -15,6 +15,7 @@ public class Testing {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
         double[][] matr2 = myMatrix.euclideanSquareDistance();
         Matrix dist = new Matrix(matr2);
         System.out.print(dist.toString());
@@ -22,7 +23,8 @@ public class Testing {
 
         myMatrix.averageVector();
         System.out.print(new Matrix(myMatrix.covariationMatrix()));
-        System.out.print( new Matrix(myMatrix.inverseCovariationMatrix()));
-        System.out.print( new Matrix(myMatrix.MahalanobisDistance()));
+        System.out.print(new Matrix(myMatrix.MahalanobisDistance()));
+
+        //System.out.println(myMatrix.inverse().toString());
     }
 }
