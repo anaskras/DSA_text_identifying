@@ -1,9 +1,11 @@
 package Matrix;
 
+import Jama.CholeskyDecomposition;
 import org.apache.commons.math3.linear.LUDecomposition;
 import org.apache.commons.math3.linear.RealMatrix;
 import org.apache.commons.math3.stat.correlation.Covariance;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 import static java.lang.Math.abs;
@@ -19,7 +21,7 @@ public class Matrix {
     private double[] averageVector;
     private boolean needToCalcAverVect;
 
-    private double [][] covariationMartix;
+    private double [][] covarianceMartix;
     private boolean needToCalcCovMatr;
 
     private double [][] euclideanDistances;
@@ -236,7 +238,7 @@ public class Matrix {
         needToCalcAverVect = true;
         averageVector = null;
         needToCalcCovMatr = true;
-        covariationMartix = null;
+        covarianceMartix = null;
     }
 
     public Matrix(Scanner inputStream){
@@ -255,7 +257,7 @@ public class Matrix {
         needToCalcAverVect = true;
         averageVector = null;
         needToCalcCovMatr = true;
-        covariationMartix = null;
+        covarianceMartix = null;
     }
     public Matrix(int rows, int cols, Scanner inputStream) {
         matr = new double[rows][cols];
@@ -273,7 +275,7 @@ public class Matrix {
         needToCalcAverVect = true;
         averageVector = null;
         needToCalcCovMatr = true;
-        covariationMartix = null;
+        covarianceMartix = null;
     }
 
     /**
@@ -294,7 +296,7 @@ public class Matrix {
         needToCalcAverVect = true;
         averageVector = null;
         needToCalcCovMatr = true;
-        covariationMartix = null;
+        covarianceMartix = null;
     }
 
     public Matrix transpose() {
@@ -452,6 +454,21 @@ public class Matrix {
         }
         return euclideanDistances;
     }
+    public double[][] euclideanDistance() {
+        if (needToCalcEuclDist) {
+            euclideanSquareDistance();
+        }
+        double [][] result = new double[euclideanDistances.length][euclideanDistances[0].length];
+        for (int i = 0; i < result.length; i++){
+            result[i] = euclideanDistances[i].clone();
+        }
+        for (int i = 0; i < result.length; i++){
+            for (int j = 0; j < result[0].length; j++){
+                result[i][j] = Math.sqrt(result[i][j]);
+            }
+        }
+        return result;
+    }
 
     public double[] averageVector() {
         if (needToCalcAverVect) {
@@ -466,51 +483,111 @@ public class Matrix {
         return averageVector;
     }
 
-    public double[][] covariationMatrix() {
-        if (needToCalcAverVect) {
-            this.averageVector();
+    private double covariance(int first, int second){
+        double cov = 0;
+        for (int i = 0; i < matr.length; i++){
+            cov += matr[i][first] * matr[i][second];
         }
-        System.out.println("built in cov matrix:");
+        cov /= matr.length;
+        return cov;
+    }
+    private double covariance(double [][] matrix, int first, int second){
+        double cov = 0;
+        for (int i = 0; i < matrix.length; i++){
+            cov += matrix[i][first] * matrix[i][second];
+        }
+        if (matrix.length > 1) {
+            cov /= (matrix.length - 1);
+        } else {
+            cov /= matrix.length;
+        }
+        return cov;
+    }
+
+    public double[][] covarianceMatrix() {
+        /*if (needToCalcAverVect) {
+            this.averageVector();
+        }*/
+        /*System.out.println("built in cov matrix:");
         RealMatrix cov = new Covariance(matr).getCovarianceMatrix();
-        System.out.print(new Matrix(cov.getData()));
+        System.out.print(new Matrix(cov.getData()));*/
         //System.out.println("built in invcov matrix:");
        // System.out.print(new Matrix( new LUDecomposition(cov).getSolver().getInverse().getData()));
         if (needToCalcCovMatr) {
-            covariationMartix = new double[cols][cols];
+            /*covarianceMartix = new double[cols][cols];
             for (int i = 0; i < rows; i++) {
                 for (int j = i; j < rows; j++) {
                     for (int k = 0; k < cols; k++) {
-                        covariationMartix[i][j] += (matr[i][k] - averageVector[k]) * (matr[j][k] - averageVector[k]);
+                        covarianceMartix[i][j] += (matr[i][k] - averageVector[k]) * (matr[j][k] - averageVector[k]);
                     }
-                    covariationMartix[j][i] = covariationMartix[i][j];
+                    covarianceMartix[j][i] = covarianceMartix[i][j];
                 }
             }
             for (int i = 0; i < cols; i++) {
                 for (int j = 0; j < cols; j++) {
-                    covariationMartix[i][j] /= (rows - 1);
+                    covarianceMartix[i][j] /= (rows - 1);
+                }
+            }*/
+
+            //creating the copy of 'matr'
+            double[][] copyMatr = new double[rows][];
+            for (int i = 0; i < rows; i++){
+                copyMatr[i] = matr[i].clone();
+            }
+
+            double[] mean = new double[matr[0].length];
+            //Arrays.fill(mean, 0);
+            //calculating the mean (average vector)
+            for (int i = 0; i < copyMatr.length; i++){
+                for (int j = 0; j < copyMatr[i].length; j++){
+                    mean[j] += copyMatr[i][j];
                 }
             }
+
+            for (int i = 0; i < mean.length; i++){
+                mean[i] /= copyMatr.length;
+            }
+
+            //extracting the mean
+            for (int i = 0; i < copyMatr.length; i++){
+                for (int j = 0; j < copyMatr[i].length; j++){
+                    copyMatr[i][j] -= mean[j];
+                }
+            }
+
+            //double[][] covMatrix = new double[copyMatr[0].length][copyMatr[0].length];
+            covarianceMartix = new double[copyMatr[0].length][copyMatr[0].length];
+            for (int i = 0; i < covarianceMartix.length; i++){
+                for(int j = 0; j < covarianceMartix.length; j++){
+                    covarianceMartix[i][j] = covariance(copyMatr,i, j);
+                }
+            }
+
             needToCalcCovMatr = false;
         }
-        return covariationMartix;
+        return covarianceMartix;
     }
 
     public double[][] MahalanobisDistance() {
         if (needToCalcCovMatr) {
-            this.covariationMatrix();
+            this.covarianceMatrix();
         }
 
-        System.out.println("DET: "+det(covariationMartix));
-        double[][] invCov = inverse(covariationMartix);
-
-        System.out.println("My COV matrix:");
-        System.out.print(new Matrix(invCov));
         double[][] result = new double[cols][cols];
+        double[][] ones = new double[cols][cols];
+        for (int i = 0; i < ones.length; i++){
+            ones[i][i] = 1;
+        }
+        //CholeskyDecomposition chol = new CholeskyDecomposition(new Jama.Matrix(covarianceMartix));
+        //Jama.Matrix oness = new Jama.Matrix(ones);
+        //Jama.Matrix invCo = chol.solve(oness);
+        //double[][] invCov = chol.solve(oness).getArray();
+        double [][] invCov = inverse(covarianceMartix);
         for (int i = 0; i < rows; i++) {
             for (int j = i + 1; j < rows; j++) {
 
                 double[] diff = new double[cols];
-                for (int k = 0; k < cols; k++) {
+                for (int k = 0; k < cols; k++) {      //difference between matr[i] and matr[j]
                     diff[k] = matr[i][k] - matr[j][k];
                 }
 

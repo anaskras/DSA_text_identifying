@@ -16,13 +16,13 @@ public class Testing {
             e.printStackTrace();
         }
 
-        double[][] matr2 = myMatrix.euclideanSquareDistance();
+        double[][] matr2 = myMatrix.euclideanDistance();
         Matrix dist = new Matrix(matr2);
         System.out.print(dist.toString());
 
 
-        myMatrix.averageVector();
-        System.out.print(new Matrix(myMatrix.covariationMatrix()));
+        //myMatrix.averageVector();
+        //System.out.print(new Matrix(myMatrix.covariationMatrix()));
         System.out.print(new Matrix(myMatrix.MahalanobisDistance()));
 
         //System.out.println(myMatrix.inverse().toString());
