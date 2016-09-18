@@ -107,3 +107,4 @@ modules.xml
 hs_err_pid*
 
 main.log
+.idea/workspace.xml
