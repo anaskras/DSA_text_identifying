@@ -21,211 +21,16 @@ public class Matrix {
     private double[] averageVector;
     private boolean needToCalcAverVect;
 
-    private double [][] covarianceMartix;
+    private double[][] covarianceMartix;
     private boolean needToCalcCovMatr;
 
-    private double [][] euclideanDistances;
+    private double[][] euclideanDistances;
     private double euclDiametr;
     private boolean needToCalcEuclDist;
 
     private double determinant;
     private boolean needToCalcDet;
 
-    private double[][] inverse(double[][] m){
-        double[][] E = new double[cols][cols];
-        for (int i = 0; i < cols; i++)
-            E[i][i] = 1;
-        double [][] matr2 = m.clone();
-        double temp;
-        for (int k = 0; k < cols; k++) {
-            temp = matr2[k][k];
-            double maxInCol = abs(temp);
-            int maxRowID = k;
-            for (int i = k + 1; i < rows; i++){
-                if (abs(matr2[i][k])>maxInCol){
-                    maxInCol = abs(matr2[i][k]);
-                    maxRowID = i;
-                }
-            }
-            if (maxRowID!= k){
-                swapLines(matr2, k, maxRowID);
-                swapLines(E, k, maxRowID);
-                temp = matr2[k][k];
-            }
-            for (int j = 0; j < cols; j++) {
-                matr2[k][j] /= temp;
-                E[k][j] /= temp;
-            }
-
-            for (int i = k + 1; i < cols; i++) {
-                temp = matr2[i][k];
-                for (int j = 0; j < cols; j++) {
-                    matr2[i][j] -= matr2[k][j] * temp;
-                    E[i][j] -= E[k][j] * temp;
-                }
-            }
-        }
-        for (int k = cols - 1; k > 0; k--) {
-            for (int i = k - 1; i >= 0; i--) {
-                temp = matr2[i][k];
-                for (int j = 0; j < cols; j++) {
-                    matr2[i][j] -= matr2[k][j] * temp;
-                    E[i][j] -= E[k][j] * temp;
-                }
-            }
-        }
-        return E;
-    }
-
-    //Matrix multiplication
-    private double[][] multiply (double [][] m1, double [][] m2) {
-        if (m1[0].length != m2.length) {
-            return null;
-        } else {
-            double[][] ans = new double[m1.length][m2[0].length];
-            for (int i = 0; i < m1.length; i++) {
-                for (int j = 0; j < m2[0].length; j++) {
-                    for (int k = 0; k < m1[0].length; k++) {
-                        ans[i][j] += m1[i][k] * m2[k][j];
-                    }
-                }
-            }
-            return ans;
-        }
-    }
-
-    private double[] multiply (double [] v, double[][] m) {
-        if (v.length != m.length) {
-            return null;
-        } else {
-            double[] ans = new double[m[0].length];
-            for (int j = 0; j < ans.length; j++) {
-                for (int k = 0; k < v.length; k++) {
-                    ans[j] += v[k] * m[k][j];
-                }
-            }
-            return ans;
-        }
-    }
-
-    private double [] multiply (double [][] m, double [] v) {
-        if (m[0].length != v.length) {
-            return null;
-        } else {
-            double[] ans = new double[m.length];
-            for (int i = 0; i < m.length; i++) {
-                for (int k = 0; k < cols; k++) {
-                    ans[i] += m[i][k] * v[k];
-                }
-            }
-            return ans;
-        }
-    }
-
-    private double [][] multiply (double [] v1, double [] v2) {
-        double[][] ans = new double[v1.length][v2.length];
-        for (int i = 0; i < v1.length; i++) {
-            for (int j = 0; j < v2.length; j++) {
-                ans[i][j] += v1[i] * v2[j];
-            }
-        }
-        return ans;
-    }
-
-    private double scalarProduct (double [] v1, double[] v2) {
-        double ans = 0;
-        if (v1.length != v2.length) {
-            System.out.print("scalarProduct error");
-            System.exit(-1);
-        }
-        for (int i = 0; i < v1.length; i++) {
-            ans += v1[i] * v2[i];
-        }
-        return ans;
-    }
-
-    private void swapLines(double[][] matrix, int i, int j) {
-        double[] temp = matrix[i];
-        matrix[i] = matrix[j];
-        matrix[j] = temp;
-    }
-    //Gauss
-    private double det(double [][] matrix) {
-        if (matrix.length != matrix[0].length) {
-            return 0;
-        } else {
-            double det = 1;
-            int sign = 1;
-            int N = matrix.length;
-            double[][] m = matrix.clone();
-            for (int i = 0; i < N; i++) {
-                double max = abs(m[i][i]);
-                int max_id = i;
-                for (int j = i + 1; j < N; j++) {
-                    if (abs(m[j][i]) > max) {
-                        max = abs(m[j][i]);
-                        max_id = j;
-                    }
-                }
-                if (max_id != i) {
-                    swapLines(m, max_id, i);
-                    sign *= -1;
-                }
-                for (int k = i + 1; k < N; k++) {
-                    for (int j = i + 1; j < N; j++) {
-                        m[k][j] -= m[k][i] / m[i][i] * m[i][j];
-                    }
-                    m[k][i] = 0;
-                }
-                det *= m[i][i];
-            }
-            if (abs(det) > 9.336808689942024E-20)
-                return det * sign;
-            else return 0;
-        }
-    }
-
-    private double[][] transpose(double [][] matrix){
-        double[][] m = new double[matrix[0].length][matrix.length];
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[0].length; j++) {
-                m[j][i] = matrix[i][j];
-            }
-        }
-        return m;
-    }
-
-    private double [][] add (double[][] m1, double [][] m2) {
-        if ((m1.length != m2.length) || (m1[0].length != m2[0].length)) {
-            return null;
-        } else {
-            int r = m1.length;
-            int c = m1[0].length;
-            double[][] ans = new double[r][c];
-            for (int i = 0; i < r; i++) {
-                for (int j = 0; j < c; j++) {
-                    ans[i][j] = m1[i][j] + m2[i][j];
-                }
-            }
-            return ans;
-        }
-    }
-
-    private double [][] subtract(double[][] m1, double [][] m2) {
-        if ((m1.length != m2.length) || (m1[0].length != m2[0].length)) {
-            return null;
-        } else {
-            int r = m1.length;
-            int c = m1[0].length;
-            double[][] ans = new double[r][c];
-            for (int i = 0; i < r; i++) {
-                for (int j = 0; j < c; j++) {
-                    ans[i][j] = m1[i][j] - m2[i][j];
-                }
-            }
-            return ans;
-        }
-    }
 
     public Matrix(double[][] matrix) {
         this.matr = matrix;
@@ -241,7 +46,7 @@ public class Matrix {
         covarianceMartix = null;
     }
 
-    public Matrix(Scanner inputStream){
+    public Matrix(Scanner inputStream) {
         rows = inputStream.nextInt();
         cols = inputStream.nextInt();
         matr = new double[rows][cols];
@@ -259,6 +64,7 @@ public class Matrix {
         needToCalcCovMatr = true;
         covarianceMartix = null;
     }
+
     public Matrix(int rows, int cols, Scanner inputStream) {
         matr = new double[rows][cols];
         for (int i = 0; i < rows; i++) {
@@ -299,11 +105,211 @@ public class Matrix {
         covarianceMartix = null;
     }
 
+    private double[][] inverse(double[][] m) {
+        double[][] E = new double[cols][cols];
+        for (int i = 0; i < cols; i++)
+            E[i][i] = 1;
+        double[][] matr2 = new double[m.length][m[0].length];
+        for (int i = 0; i < m.length; i++){
+            matr2[i] = m[i].clone();
+        }
+        double temp;
+        for (int k = 0; k < cols; k++) {
+            temp = matr2[k][k];
+            double maxInCol = abs(temp);
+            int maxRowID = k;
+            for (int i = k + 1; i < rows; i++) {
+                if (abs(matr2[i][k]) > maxInCol) {
+                    maxInCol = abs(matr2[i][k]);
+                    maxRowID = i;
+                }
+            }
+            if (maxRowID != k) {
+                swapLines(matr2, k, maxRowID);
+                swapLines(E, k, maxRowID);
+                temp = matr2[k][k];
+            }
+            for (int j = 0; j < cols; j++) {
+                matr2[k][j] /= temp;
+                E[k][j] /= temp;
+            }
+
+            for (int i = k + 1; i < cols; i++) {
+                temp = matr2[i][k];
+                for (int j = 0; j < cols; j++) {
+                    matr2[i][j] -= matr2[k][j] * temp;
+                    E[i][j] -= E[k][j] * temp;
+                }
+            }
+        }
+        for (int k = cols - 1; k > 0; k--) {
+            for (int i = k - 1; i >= 0; i--) {
+                temp = matr2[i][k];
+                for (int j = 0; j < cols; j++) {
+                    matr2[i][j] -= matr2[k][j] * temp;
+                    E[i][j] -= E[k][j] * temp;
+                }
+            }
+        }
+        return E;
+    }
+
+    //Matrix multiplication
+    private double[][] multiply(double[][] m1, double[][] m2) {
+        if (m1[0].length != m2.length) {
+            return null;
+        } else {
+            double[][] ans = new double[m1.length][m2[0].length];
+            for (int i = 0; i < m1.length; i++) {
+                for (int j = 0; j < m2[0].length; j++) {
+                    for (int k = 0; k < m1[0].length; k++) {
+                        ans[i][j] += m1[i][k] * m2[k][j];
+                    }
+                }
+            }
+            return ans;
+        }
+    }
+
+    private double[] multiply(double[] v, double[][] m) {
+        if (v.length != m.length) {
+            return null;
+        } else {
+            double[] ans = new double[m[0].length];
+            for (int j = 0; j < ans.length; j++) {
+                for (int k = 0; k < v.length; k++) {
+                    ans[j] += v[k] * m[k][j];
+                }
+            }
+            return ans;
+        }
+    }
+
+    private double[] multiply(double[][] m, double[] v) {
+        if (m[0].length != v.length) {
+            return null;
+        } else {
+            double[] ans = new double[m.length];
+            for (int i = 0; i < m.length; i++) {
+                for (int k = 0; k < cols; k++) {
+                    ans[i] += m[i][k] * v[k];
+                }
+            }
+            return ans;
+        }
+    }
+
+    private double[][] multiply(double[] v1, double[] v2) {
+        double[][] ans = new double[v1.length][v2.length];
+        for (int i = 0; i < v1.length; i++) {
+            for (int j = 0; j < v2.length; j++) {
+                ans[i][j] += v1[i] * v2[j];
+            }
+        }
+        return ans;
+    }
+
+    private double scalarProduct(double[] v1, double[] v2) {
+        double ans = 0;
+        if (v1.length != v2.length) {
+            System.out.print("scalarProduct error");
+            System.exit(-1);
+        }
+        for (int i = 0; i < v1.length; i++) {
+            ans += v1[i] * v2[i];
+        }
+        return ans;
+    }
+
+    private void swapLines(double[][] matrix, int i, int j) {
+        double[] temp = matrix[i];
+        matrix[i] = matrix[j];
+        matrix[j] = temp;
+    }
+
+    //Gauss
+    private double det(double[][] matrix) {
+        if (matrix.length != matrix[0].length) {
+            return 0;
+        } else {
+            double det = 1;
+            int sign = 1;
+            int N = matrix.length;
+            double[][] m = matrix.clone();
+            for (int i = 0; i < N; i++) {
+                double max = abs(m[i][i]);
+                int max_id = i;
+                for (int j = i + 1; j < N; j++) {
+                    if (abs(m[j][i]) > max) {
+                        max = abs(m[j][i]);
+                        max_id = j;
+                    }
+                }
+                if (max_id != i) {
+                    swapLines(m, max_id, i);
+                    sign *= -1;
+                }
+                for (int k = i + 1; k < N; k++) {
+                    for (int j = i + 1; j < N; j++) {
+                        m[k][j] -= m[k][i] / m[i][i] * m[i][j];
+                    }
+                    m[k][i] = 0;
+                }
+                det *= m[i][i];
+            }
+            if (abs(det) > 9.336808689942024E-20)
+                return det * sign;
+            else return 0;
+        }
+    }
+
+    private double[][] transpose(double[][] matrix) {
+        double[][] m = new double[matrix[0].length][matrix.length];
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                m[j][i] = matrix[i][j];
+            }
+        }
+        return m;
+    }
+
+    private double[][] add(double[][] m1, double[][] m2) {
+        if ((m1.length != m2.length) || (m1[0].length != m2[0].length)) {
+            return null;
+        } else {
+            int r = m1.length;
+            int c = m1[0].length;
+            double[][] ans = new double[r][c];
+            for (int i = 0; i < r; i++) {
+                for (int j = 0; j < c; j++) {
+                    ans[i][j] = m1[i][j] + m2[i][j];
+                }
+            }
+            return ans;
+        }
+    }
+
+    private double[][] subtract(double[][] m1, double[][] m2) {
+        if ((m1.length != m2.length) || (m1[0].length != m2[0].length)) {
+            return null;
+        } else {
+            int r = m1.length;
+            int c = m1[0].length;
+            double[][] ans = new double[r][c];
+            for (int i = 0; i < r; i++) {
+                for (int j = 0; j < c; j++) {
+                    ans[i][j] = m1[i][j] - m2[i][j];
+                }
+            }
+            return ans;
+        }
+    }
+
     public Matrix transpose() {
         return new Matrix(transpose(matr));
     }
 
-    public double [][] inverse() {
+    public double[][] inverse() {
         return inverse(matr);
     }
 
@@ -416,7 +422,6 @@ public class Matrix {
     }
 
 
-
     public double det() {
         if (needToCalcDet) {
             determinant = det(matr);
@@ -427,47 +432,45 @@ public class Matrix {
 
     /**
      * @return if (i != j) double[i][j] - distance between i and j rows
-     *         if (i == j) double [i][i] - distance between i row and Zero vector
      */
     public double[][] euclideanSquareDistance() {
         if (needToCalcEuclDist) {
-            euclideanDistances = new double[rows][rows];
+            euclideanDistances = new double[1][rows * (rows - 1) / 2];
             euclDiametr = 0;
+            int p = 0;
             for (int i = 0; i < rows; i++) {
-                for (int j = i; j < rows; j++) {
-                    if (i == j) {
-                        for (int k = 0; k < cols; k++) {
-                            euclideanDistances[i][j] += (matr[i][k]) * (matr[i][k]);
-                        }
-                    } else {
-                        for (int k = 0; k < cols; k++) {
-                            euclideanDistances[i][j] += (matr[i][k] - matr[j][k]) * (matr[i][k] - matr[j][k]);
-                        }
-                        if (euclideanDistances[i][j] > euclDiametr) {
-                            euclDiametr = euclideanDistances[i][j];
-                        }
-                        euclideanDistances[j][i] = euclideanDistances[i][j];
+                for (int j = i + 1; j < rows; j++) {
+                    for (int k = 0; k < cols; k++) {
+                        euclideanDistances[0][p] += (matr[i][k] - matr[j][k]) * (matr[i][k] - matr[j][k]);
                     }
+                    if (euclideanDistances[0][p] > euclDiametr) {
+                        euclDiametr = euclideanDistances[0][p];
+                    }
+                    p++;
                 }
+
             }
             needToCalcEuclDist = false;
         }
         return euclideanDistances;
     }
+
     public double[][] euclideanDistance() {
         if (needToCalcEuclDist) {
             euclideanSquareDistance();
         }
-        double [][] result = new double[euclideanDistances.length][euclideanDistances[0].length];
-        for (int i = 0; i < result.length; i++){
-            result[i] = euclideanDistances[i].clone();
+        double[][] result = new double[1][euclideanDistances.length];
+        result[0] = euclideanDistances[0].clone();
+        for (int i = 0; i < result[0].length; i++) {
+            result[0][i] = Math.sqrt(result[0][i]);
         }
-        for (int i = 0; i < result.length; i++){
-            for (int j = 0; j < result[0].length; j++){
-                result[i][j] = Math.sqrt(result[i][j]);
-            }
-        }
+
         return result;
+    }
+
+    public double eucDistBetween(int i, int j){
+        int n = i + 2;
+        return Math.sqrt(euclideanDistances[0][n * (n - 1) / 2 + i * (euclideanDistances.length - n) + j - n]);
     }
 
     public double[] averageVector() {

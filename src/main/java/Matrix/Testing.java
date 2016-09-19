@@ -19,6 +19,7 @@ public class Testing {
         double[][] matr2 = myMatrix.euclideanDistance();
         Matrix dist = new Matrix(matr2);
         System.out.print(dist.toString());
+        System.out.println("Distance between 1 and 3: " + myMatrix.eucDistBetween(1, 3));
 
 
         //myMatrix.averageVector();
