@@ -39,4 +39,8 @@ public class TextSample {
             e.printStackTrace();
         }
     }
+
+    public HashMap<String, Integer> getMyMap() {
+        return myMap;
+    }
 }
