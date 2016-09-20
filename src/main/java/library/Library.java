@@ -1,11 +1,10 @@
 package library;
 
+import Matrix.Matrix;
+
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.Random;
-import java.util.Scanner;
-import java.util.TreeMap;
+import java.util.*;
 
 /**
  * Created by tokar on 16.09.2016.
@@ -24,8 +23,10 @@ public class Library {
     private int crossvalidationFolds;
 
     private ArrayList<Author> authors;
-    private ArrayList<TextSample> trainSamples;
     private ArrayList<TextSample> testSamples;
+
+    private int [] answers;
+
     public Library(){
         fullMap = new TreeMap<String, Integer>();
         try {
@@ -66,8 +67,6 @@ public class Library {
             }
             scAuth.close();
             createFullMapAndSamples();
-
-
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -75,7 +74,37 @@ public class Library {
     /**
      * Created by Nastya on 20.09.2016.
      */
+    public int [] classifyToAuthor(){
+        answers = new int[testSamples.size()];
+        ArrayList<Matrix> authorsMatrix = new ArrayList<Matrix>(authors.size());
+        for (int i = 0;i<authorsMatrix.size();i++){
+            authorsMatrix.add(makeMatrix(authors.get(i).getTrainSamples()));
+        }
+        Matrix testSamplesMatrix = makeMatrix(testSamples);
 
+    }
+
+    private Matrix makeMatrix(ArrayList<TextSample> samples){
+        double[][] matrix = new double[samples.size()][];
+        for (int i = 0; i< matrix.length; i++){
+            matrix[i] = makeVector(samples.get(i).getMyMap());
+        }
+        return new Matrix(matrix);
+    }
+
+    private double[] makeVector(HashMap<String, Integer> map){
+        double [] vector = new double[fullMap.size()];
+        int i = 0;
+        for (String s: fullMap.keySet()) {
+            if (map.containsKey(s)){
+                vector[i] = map.get(s);
+            }else{
+                vector[i] = 0;
+            }
+            i++;
+        }
+        return vector;
+    }
 
     public void createFullMapAndSamples(){
         int[] authorsId = findAuthorsID();
@@ -85,11 +114,11 @@ public class Library {
             for (int j = 0; j < booksId.length; j++){
                 int[] docsId = findDocsID(authorsId[i], booksId[j]);
                 for (int k = 0; k < docsId.length; k++){
+                    TextSample sample = new TextSample(authorsId[i], booksId[j],docsId[k], fullMap);
                     if(random.nextInt() % 10 < 8){
-
-                        trainSamples.add(new TextSample(authorsId[i], booksId[j],docsId[k], fullMap));
+                        authors.get(authorsId[i]-1).addSample(sample);
                     }else{
-                        testSamples.add(new TextSample(authorsId[i], booksId[j],docsId[k], fullMap));
+                        testSamples.add(sample);
                     }
                 }
             }
@@ -97,38 +126,19 @@ public class Library {
     }
 
     public int[] findAuthorsID(){
-        try {
-            Scanner scAuth = new Scanner(new File("src\\main\\java\\library\\docsTrain\\path.txt"));
-            int numberOf = scAuth.nextInt();
-            int[] result = new int[numberOf];
-            for (int i = 0; i < numberOf; i++) {
-                result[i] = scAuth.nextInt();
-            }
-            return result;
-        } catch (FileNotFoundException e){
-            e.printStackTrace();
-        }
-        return null;
+        return readPaths("src\\main\\java\\library\\docsTrain\\path.txt");
     }
 
     public int[] findBooksID (int authorID) {
         String path = "src\\main\\java\\library\\docsTrain\\" + authorID + "\\path.txt";
-        try {
-            Scanner scBook = new Scanner(new File(path));
-            int numberOf = scBook.nextInt();
-            int[] result = new int[numberOf];
-            for (int i = 0; i < numberOf; i++) {
-                result[i] = scBook.nextInt();
-            }
-            return result;
-        } catch (FileNotFoundException e){
-            e.printStackTrace();
-        }
-        return null;
+        return readPaths(path);
     }
 
     public int[] findDocsID (int authorID, int bookID) {
         String path = "src\\main\\java\\library\\docsTrain\\" + authorID + "\\" + bookID + "\\path.txt";
+        return readPaths(path);
+    }
+    private int [] readPaths (String path){
         try {
             Scanner scDoc = new Scanner(new File(path));
             int numberOf = scDoc.nextInt();
@@ -149,11 +159,16 @@ public class Library {
         private int id;
         private String name;
         ArrayList<Book> books;
+        private ArrayList<TextSample> trainSamples;
         public Author(String name, int id) {
+            trainSamples = new ArrayList<TextSample>();
             this.id = id;
             this.name = name;
             books = new ArrayList<Book>();
+        }
 
+        public void addSample(TextSample sample){
+            trainSamples.add(sample);
         }
 
         public void addBook(Book book) {
@@ -164,12 +179,8 @@ public class Library {
             return id;
         }
 
-        public String getName() {
-            return name;
-        }
-
-        public ArrayList<Book> getBooks() {
-            return books;
+        public ArrayList<TextSample> getTrainSamples() {
+            return trainSamples;
         }
 
         @Override
@@ -198,18 +209,6 @@ public class Library {
             this.name = name;
             this.id = id;
             this.author = author;
-        }
-
-        public Author getAuthor() {
-            return author;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public int getId() {
-            return id;
         }
 
         @Override
