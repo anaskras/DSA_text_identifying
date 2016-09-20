@@ -25,10 +25,12 @@ public class Library {
     private ArrayList<Author> authors;
     private ArrayList<TextSample> testSamples;
 
-    private int [] answers;
+    private ArrayList<Answer>  answers;
 
     public Library(){
         fullMap = new TreeMap<String, Integer>();
+        authors = new ArrayList<Author>();
+        testSamples = new ArrayList<TextSample>();
         try {
 
             Scanner scLib = new Scanner(new File("src\\main\\java\\library\\DoNotTouchThisIsLibrarySettings.txt"));
@@ -51,12 +53,14 @@ public class Library {
             Scanner scAuth = new Scanner(new File("src\\main\\java\\library\\sourceTextsTrain\\Authors.txt"));
             while (scAuth.hasNext()){
                 int authorID = scAuth.nextInt();
+                scAuth.skip(" ");
                 String authorName = scAuth.nextLine();
                 Author author = new Author(authorName, authorID);
 
                 Scanner scBook = new Scanner(new File("src\\main\\java\\library\\sourceTextsTrain\\"+authorID+"\\"+"Books.txt"));
                 while (scBook.hasNext()) {
                     int bookID = scBook.nextInt();
+                    scBook.skip(" ");
                     String bookName = scBook.nextLine();
                     Book book = new Book(author, bookName, bookID);
                     author.addBook(book);
@@ -74,14 +78,50 @@ public class Library {
     /**
      * Created by Nastya on 20.09.2016.
      */
-    public int [] classifyToAuthor(){
-        answers = new int[testSamples.size()];
+    public void viewAuthorClassifyingResults() {
+        classifyToAuthor();
+        double right = 0;
+        double fail = 0;
+        for (int i = 0; i < answers.size(); i++) {
+            System.out.print(testSamples.get(i) + " classified to author: " + answers.get(i).classID + System.lineSeparator());
+            if (answers.get(i).classID == testSamples.get(i).getAuthorID()) {
+                right++;
+            } else {
+                fail++;
+                for (int j = 0; j < answers.get(i).distancesToClasses.length; j++) {
+                    System.out.println("\tdistance to " + String.valueOf(j + 1) + ": " + answers.get(i).distancesToClasses[j]);
+                }
+            }
+        }
+        System.out.println("accuracy: " + String.valueOf(right / answers.size()));
+    }
+
+    public void classifyToAuthor(){
         ArrayList<Matrix> authorsMatrix = new ArrayList<Matrix>(authors.size());
-        for (int i = 0;i<authorsMatrix.size();i++){
+        for (int i = 0;i<authors.size();i++){
             authorsMatrix.add(makeMatrix(authors.get(i).getTrainSamples()));
         }
         Matrix testSamplesMatrix = makeMatrix(testSamples);
+        answers =  getAuthorsBySamples(authorsMatrix, testSamplesMatrix);
+    }
 
+    private ArrayList<Answer> getAuthorsBySamples(ArrayList<Matrix> authorMatrix, Matrix sampleTests) {
+        //create an array where we will keep authors for samples
+        ArrayList<Answer> result = new ArrayList<Answer>(sampleTests.getRows());
+        for (int i = 0; i < sampleTests.getRows(); i++) {
+            int authorID = 0;
+            double minDist = Double.MAX_VALUE;
+            double[] distances = new double[authorMatrix.size()];
+            for (int j = 0; j < authorMatrix.size(); j++) {
+                distances[j] = Matrix.euclidianDistance(sampleTests.getRow(i), authorMatrix.get(j).averageVector());
+                if ((distances[j] < minDist) && (authorMatrix.get(j).getEuclDiametrToAverVect() >= distances[j])) {
+                    minDist = distances[j];
+                    authorID = j + 1;
+                }
+            }
+            result.add(new Answer(authorID, distances));
+        }
+        return result;
     }
 
     private Matrix makeMatrix(ArrayList<TextSample> samples){
@@ -218,5 +258,19 @@ public class Library {
     }
 
 
+    /**
+     * Created by tokar on 20.09.2016.
+     */
+    public static class Answer {
+        public int classID;
+        public double [] distancesToClasses;
+        public Answer (int classesSize){
+            distancesToClasses = new double[classesSize];
+        }
 
+        public Answer (int classID, double[] distancesToClasses){
+            this.classID = classID;
+            this.distancesToClasses = distancesToClasses;
+        }
+    }
 }

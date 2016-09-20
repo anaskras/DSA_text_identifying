@@ -32,7 +32,9 @@ public class TextSample {
                 String word = sc.next();
                 Integer count = sc.nextInt();
                 myMap.put(word, count);
-                count += (Integer) fullMap.get(word);
+                if (fullMap.containsKey(word)) {
+                    count += (Integer) fullMap.get(word);
+                }
                 fullMap.put(word, count);
             }
         } catch (FileNotFoundException e) {
@@ -40,7 +42,16 @@ public class TextSample {
         }
     }
 
+    public int getAuthorID() {
+        return authorID;
+    }
+
     public HashMap<String, Integer> getMyMap() {
         return myMap;
+    }
+
+    @Override
+    public String toString() {
+        return new String(authorID+"-"+bookID+"-"+sampleID);
     }
 }

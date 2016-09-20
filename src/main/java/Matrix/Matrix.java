@@ -24,11 +24,11 @@ public class Matrix {
     private double[][] covarianceMartix;
     private boolean needToCalcCovMatr;
 
-    private double[][] euclideanDistances;
+    private double[] euclideanDistances;
     private double euclDiametr;
     private boolean needToCalcEuclDist;
 
-    private double[][] euclideanDistancesToAverVect;
+    private double[] euclideanDistancesToAverVect;
     private double euclDiametrToAverVect;
     private boolean needToCalcEuclDistToAverVect;
 
@@ -461,18 +461,18 @@ public class Matrix {
     /**
      * @return if (i != j) double[i][j] - distance between i and j rows
      */
-    public double[][] euclideanSquareDistance() {
+    public double[] euclideanSquareDistance() {
         if (needToCalcEuclDist) {
-            euclideanDistances = new double[1][rows * (rows - 1) / 2];
+            euclideanDistances = new double[rows * (rows - 1) / 2];
             euclDiametr = 0;
             int p = 0;
             for (int i = 0; i < rows; i++) {
                 for (int j = i + 1; j < rows; j++) {
                     for (int k = 0; k < cols; k++) {
-                        euclideanDistances[0][p] += (matr[i][k] - matr[j][k]) * (matr[i][k] - matr[j][k]);
+                        euclideanDistances[p] += (matr[i][k] - matr[j][k]) * (matr[i][k] - matr[j][k]);
                     }
-                    if (euclideanDistances[0][p] > euclDiametr) {
-                        euclDiametr = euclideanDistances[0][p];
+                    if (euclideanDistances[p] > euclDiametr) {
+                        euclDiametr = euclideanDistances[p];
                     }
                     p++;
                 }
@@ -483,14 +483,13 @@ public class Matrix {
         return euclideanDistances;
     }
 
-    public double[][] euclideanDistance() {
+    public double[] euclideanDistance() {
         if (needToCalcEuclDist) {
             euclideanSquareDistance();
         }
-        double[][] result = new double[1][euclideanDistances.length];
-        result[0] = euclideanDistances[0].clone();
-        for (int i = 0; i < result[0].length; i++) {
-            result[0][i] = Math.sqrt(result[0][i]);
+        double[] result = euclideanDistances.clone();
+        for (int i = 0; i < result.length; i++) {
+            result[i] = Math.sqrt(result[i]);
         }
 
         return result;
@@ -498,7 +497,7 @@ public class Matrix {
 
     public double eucDistBetween(int i, int j){
         int n = i + 2;
-        return Math.sqrt(euclideanDistances[0][n * (n - 1) / 2 + i * (euclideanDistances.length - n) + j - n]);
+        return Math.sqrt(euclideanDistances[n * (n - 1) / 2 + i * (euclideanDistances.length - n) + j - n]);
     }
 
     public static double euclideanSquareDistance(double[] myVector, double[] averageVector) {
@@ -510,36 +509,47 @@ public class Matrix {
     }
 
     public static double euclidianDistance(double[] myVector, double[] averageVector){
-        return Math.sqrt(euclidianDistance(myVector, averageVector));
+        return Math.sqrt(euclideanSquareDistance(myVector, averageVector));
     }
 
     public double[] euclideanSquareDistToAverVect() {
         if (needToCalcEuclDistToAverVect) {
-            euclideanDistancesToAverVect = new double[1][rows];
+            euclideanDistancesToAverVect = new double[rows];
             euclDiametrToAverVect = 0;
             for (int i = 0; i < rows; i++) {
                 for (int k = 0; k < cols; k++) {
-                    euclideanDistancesToAverVect[0][i] += (matr[i][k] - averageVector[k]) * (matr[i][k] - averageVector[k]);
+                    euclideanDistancesToAverVect[i] += (matr[i][k] - averageVector[k]) * (matr[i][k] - averageVector[k]);
                 }
-                if (euclideanDistancesToAverVect[0][i] > euclDiametrToAverVect) {
-                    euclDiametrToAverVect = euclideanDistancesToAverVect[0][i];
+                if (euclideanDistancesToAverVect[i] > euclDiametrToAverVect) {
+                    euclDiametrToAverVect = euclideanDistancesToAverVect[i];
                 }
             }
         }
         needToCalcEuclDistToAverVect = false;
-        return euclideanDistancesToAverVect[0];
+        return euclideanDistancesToAverVect;
     }
 
-    public double[] euclidianDistanceToAverVect(){
+    public double[] euclidianDistToAverVect(){
         if (needToCalcEuclDistToAverVect){
             euclideanSquareDistToAverVect();
         }
-        double [][] eucl = new double[1][euclideanDistancesToAverVect[0].length];
-        eucl[0] = euclideanDistancesToAverVect[0].clone();
-        for (int i = 0; i < eucl[0].length; i++){
-            Math.sqrt(eucl[0][i]);
+        double [] eucl  = euclideanDistancesToAverVect.clone();
+        for (int i = 0; i < eucl.length; i++){
+            eucl[i] = Math.sqrt(eucl[i]);
         }
-        return eucl[0];
+        return eucl;
+    }
+    public double getSquareEuclDiametrToAverVect() {
+        if (needToCalcEuclDistToAverVect) {
+            euclideanSquareDistToAverVect();
+        }
+        return euclDiametrToAverVect;
+    }
+    public double getEuclDiametrToAverVect() {
+        if (needToCalcEuclDistToAverVect) {
+            euclideanSquareDistToAverVect();
+        }
+        return Math.sqrt(euclDiametrToAverVect);
     }
 
     public double[] averageVector() {
