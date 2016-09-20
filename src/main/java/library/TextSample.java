@@ -18,7 +18,8 @@ public class TextSample {
     private int myMapSize;
     private int myMapWordCount;
 
-    public TextSample(String path,int authorID, int bookID, int sampleID, TreeMap fullMap) {
+    public TextSample(int authorID, int bookID, int sampleID, TreeMap fullMap) {
+        String path = "src\\main\\java\\library\\docsTrain\\" + authorID + "\\" + bookID + "\\" + authorID + "-" + bookID + "-" + sampleID + "-map.txt";
         this.authorID = authorID;
         this.bookID = bookID;
         this.sampleID = sampleID;
@@ -27,7 +28,7 @@ public class TextSample {
             myMapSize = sc.nextInt();
             myMap = new HashMap<String, Integer>(myMapSize);
             myMapWordCount = sc.nextInt();
-            for (int i = 0; i< myMapSize; i++) {
+            for (int i = 0; i < myMapSize; i++) {
                 String word = sc.next();
                 Integer count = sc.nextInt();
                 myMap.put(word, count);

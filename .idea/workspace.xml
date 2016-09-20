@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea9ff3ab-80b8-4bd2-a95e-48dcffff9e5d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/library/Path.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/library/Path.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/path.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/1/path.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/path.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/2/path.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/path.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/3/path.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/path.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/4/path.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/path.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/5/path.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/path.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/6/path.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/path.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/7/path.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/path.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/1/path.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/path.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/1/path.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/path.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/2/path.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/path.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/3/path.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/path.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/4/path.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/path.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/2/path.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/path.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/path.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/path.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/3/path.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/docsTrain/path.txt" afterPath="$PROJECT_DIR$/src/main/java/library/docsTrain/path.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Matrix/Matrix.java" afterPath="$PROJECT_DIR$/src/main/java/Matrix/Matrix.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/Library.java" afterPath="$PROJECT_DIR$/src/main/java/library/Library.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/TextSample.java" afterPath="$PROJECT_DIR$/src/main/java/library/TextSample.java" />
     </list>
     <ignored path="DSA_text_identifying.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,26 +30,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Path.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/library/Path.java">
+      <file leaf-file-name="Library.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/library/Library.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+            <state relative-caret-position="374">
+              <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#findAuthorsID#0;class#Path#0" expanded="false" />
-                <element signature="method#findBooksID#0;class#Path#0" expanded="false" />
-                <marker date="1474379113253" expanded="false" signature="1690:2205" ph="{...}" />
+                <element signature="method#createFullMapAndSamples#0;class#Library#0" expanded="false" />
+                <element signature="method#findAuthorsID#0;class#Library#0" expanded="false" />
+                <element signature="method#findBooksID#0;class#Library#0" expanded="false" />
+                <element signature="method#findDocsID#0;class#Library#0" expanded="false" />
+                <element signature="class#Author#0;class#Library#0" expanded="false" />
+                <element signature="class#Book#0;class#Library#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Library.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/library/Library.java">
+      <file leaf-file-name="TextSample.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/library/TextSample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="47" column="110" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="110" />
+            <state relative-caret-position="493">
+              <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -113,15 +102,12 @@
         <option value="$PROJECT_DIR$/src/main/java/Author.java" />
         <option value="$PROJECT_DIR$/src/main/java/Book.java" />
         <option value="$PROJECT_DIR$/src/main/java/library/Book.java" />
-        <option value="$PROJECT_DIR$/src/main/java/library/TextSample.java" />
         <option value="$PROJECT_DIR$/src/main/java/library/Author.java" />
         <option value="$PROJECT_DIR$/src/main/java/library/DoNotTuchThisIsLibrarySettings.txt" />
         <option value="$PROJECT_DIR$/src/main/java/PreparingDocuments.java" />
-        <option value="$PROJECT_DIR$/src/main/java/library/Library.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Matrix/test.txt" />
         <option value="$PROJECT_DIR$/src/main/java/Matrix/Testing.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Matrix/Matrix.java" />
         <option value="$PROJECT_DIR$/src/main/java/library/docsTrain/3/path.txt" />
         <option value="$PROJECT_DIR$/src/main/java/library/docsTrain/path.txt" />
         <option value="$PROJECT_DIR$/src/main/java/library/docsTrain/2/path.txt" />
@@ -139,6 +125,9 @@
         <option value="$PROJECT_DIR$/src/main/java/library/docsTrain/1/path.txt" />
         <option value="$PROJECT_DIR$/src/main/java/library/docsTrain/3/1/path.txt" />
         <option value="$PROJECT_DIR$/src/main/java/library/Path.java" />
+        <option value="$PROJECT_DIR$/src/main/java/library/TextSample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Matrix/Matrix.java" />
+        <option value="$PROJECT_DIR$/src/main/java/library/Library.java" />
       </list>
     </option>
   </component>
@@ -191,9 +180,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -270,6 +259,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Matrix" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSA_text_identifying" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DSA_text_identifying" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="library" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -331,44 +346,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="docsTrain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DSA_text_identifying" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DSA_text_identifying" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docsTrain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -410,12 +387,12 @@
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/inf-retrieval" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GitHub\DSA_text_identifying\src\main\java\library" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GitHub\DSA_text_identifying\src\sourceTexts\1" />
       <recent name="D:\GitHub\DSA_text_identifying\.idea" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\DSA_text_identifying\src\main\java\library" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Testing">
@@ -849,8 +826,14 @@
           <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Matrix/Matrix.java</url>
+          <line>476</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="33" />
+      <option name="time" value="34" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1022,13 +1005,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/library/TextSample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar!/org/apache/commons/math3/linear/LUDecomposition.class" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1055,7 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1063,47 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="21" column="89" selection-start-line="21" selection-start-column="89" selection-end-line="21" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="615" column="1" selection-start-line="615" selection-start-column="1" selection-end-line="615" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Matrix#2;class#Matrix#0" expanded="false" />
-            <element signature="method#Matrix#3;class#Matrix#0" expanded="false" />
-            <element signature="method#multiply#0;class#Matrix#0" expanded="false" />
-            <element signature="method#multiply#1;class#Matrix#0" expanded="false" />
-            <element signature="method#multiply#2;class#Matrix#0" expanded="false" />
-            <element signature="method#multiply#3;class#Matrix#0" expanded="false" />
-            <element signature="method#scalarProduct#0;class#Matrix#0" expanded="false" />
-            <element signature="method#swapLines#0;class#Matrix#0" expanded="false" />
-            <element signature="method#det#0;class#Matrix#0" expanded="false" />
-            <element signature="method#transpose#0;class#Matrix#0" expanded="false" />
-            <element signature="method#add#0;class#Matrix#0" expanded="false" />
-            <element signature="method#subtract#0;class#Matrix#0" expanded="false" />
-            <element signature="method#add#1;class#Matrix#0" expanded="false" />
-            <element signature="method#subtract#1;class#Matrix#0" expanded="false" />
-            <element signature="method#multiply#4;class#Matrix#0" expanded="false" />
-            <element signature="method#scalarProduct#1;class#Matrix#0" expanded="false" />
-            <element signature="method#toString#0;class#Matrix#0" expanded="false" />
-            <element signature="method#det#1;class#Matrix#0" expanded="false" />
-            <element signature="method#averageVector#0;class#Matrix#0" expanded="false" />
-            <element signature="method#covariance#0;class#Matrix#0" expanded="false" />
-            <element signature="method#covariance#1;class#Matrix#0" expanded="false" />
-            <element signature="method#covarianceMatrix#0;class#Matrix#0" expanded="false" />
-            <element signature="method#MahalanobisDistance#0;class#Matrix#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/library/Library.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="47" column="110" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="110" />
           <folding />
         </state>
       </provider>
@@ -1238,13 +1172,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/library/Path.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        <state relative-caret-position="150">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/TextSample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#findAuthorsID#0;class#Path#0" expanded="false" />
-            <element signature="method#findBooksID#0;class#Path#0" expanded="false" />
-            <marker date="1474379113253" expanded="false" signature="1690:2205" ph="{...}" />
+            <element signature="method#Matrix#2;class#Matrix#0" expanded="false" />
+            <element signature="method#Matrix#3;class#Matrix#0" expanded="false" />
+            <element signature="method#multiply#0;class#Matrix#0" expanded="false" />
+            <element signature="method#multiply#1;class#Matrix#0" expanded="false" />
+            <element signature="method#multiply#2;class#Matrix#0" expanded="false" />
+            <element signature="method#multiply#3;class#Matrix#0" expanded="false" />
+            <element signature="method#scalarProduct#0;class#Matrix#0" expanded="false" />
+            <element signature="method#swapLines#0;class#Matrix#0" expanded="false" />
+            <element signature="method#det#0;class#Matrix#0" expanded="false" />
+            <element signature="method#transpose#0;class#Matrix#0" expanded="false" />
+            <element signature="method#add#0;class#Matrix#0" expanded="false" />
+            <element signature="method#subtract#0;class#Matrix#0" expanded="false" />
+            <element signature="method#add#1;class#Matrix#0" expanded="false" />
+            <element signature="method#subtract#1;class#Matrix#0" expanded="false" />
+            <element signature="method#multiply#4;class#Matrix#0" expanded="false" />
+            <element signature="method#scalarProduct#1;class#Matrix#0" expanded="false" />
+            <element signature="method#toString#0;class#Matrix#0" expanded="false" />
+            <element signature="method#det#1;class#Matrix#0" expanded="false" />
+            <element signature="method#covarianceMatrix#0;class#Matrix#0" expanded="false" />
+            <element signature="method#MahalanobisDistance#0;class#Matrix#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/library/Library.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding>
+            <element signature="method#createFullMapAndSamples#0;class#Library#0" expanded="false" />
+            <element signature="method#findAuthorsID#0;class#Library#0" expanded="false" />
+            <element signature="method#findBooksID#0;class#Library#0" expanded="false" />
+            <element signature="method#findDocsID#0;class#Library#0" expanded="false" />
+            <element signature="class#Author#0;class#Library#0" expanded="false" />
+            <element signature="class#Book#0;class#Library#0" expanded="false" />
           </folding>
         </state>
       </provider>

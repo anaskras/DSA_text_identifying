@@ -486,14 +486,6 @@ public class Matrix {
         return averageVector;
     }
 
-    private double covariance(int first, int second){
-        double cov = 0;
-        for (int i = 0; i < matr.length; i++){
-            cov += matr[i][first] * matr[i][second];
-        }
-        cov /= matr.length;
-        return cov;
-    }
     private double covariance(double [][] matrix, int first, int second){
         double cov = 0;
         for (int i = 0; i < matrix.length; i++){

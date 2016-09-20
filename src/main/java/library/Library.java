@@ -1,10 +1,9 @@
 package library;
 
-import Matrix.Matrix;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 import java.util.TreeMap;
 
@@ -13,7 +12,7 @@ import java.util.TreeMap;
  */
 public class Library {
 
-    TreeMap<String, Integer> words;
+    TreeMap<String, Integer> fullMap;
 
     private int samplingWordCount;
 
@@ -28,6 +27,7 @@ public class Library {
     private ArrayList<TextSample> trainSamples;
     private ArrayList<TextSample> testSamples;
     public Library(){
+        fullMap = new TreeMap<String, Integer>();
         try {
 
             Scanner scLib = new Scanner(new File("src\\main\\java\\library\\DoNotTouchThisIsLibrarySettings.txt"));
@@ -65,17 +65,83 @@ public class Library {
                 authors.add(author);
             }
             scAuth.close();
-            /*
-            *   reading  samples
-            *
-             */
+            createFullMapAndSamples();
 
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
     }
+    /**
+     * Created by Nastya on 20.09.2016.
+     */
 
+
+    public void createFullMapAndSamples(){
+        int[] authorsId = findAuthorsID();
+        Random random = new Random();
+        for (int i = 0; i < authorsId.length; i++){
+            int[] booksId = findBooksID(authorsId[i]);
+            for (int j = 0; j < booksId.length; j++){
+                int[] docsId = findDocsID(authorsId[i], booksId[j]);
+                for (int k = 0; k < docsId.length; k++){
+                    if(random.nextInt() % 10 < 8){
+
+                        trainSamples.add(new TextSample(authorsId[i], booksId[j],docsId[k], fullMap));
+                    }else{
+                        testSamples.add(new TextSample(authorsId[i], booksId[j],docsId[k], fullMap));
+                    }
+                }
+            }
+        }
+    }
+
+    public int[] findAuthorsID(){
+        try {
+            Scanner scAuth = new Scanner(new File("src\\main\\java\\library\\docsTrain\\path.txt"));
+            int numberOf = scAuth.nextInt();
+            int[] result = new int[numberOf];
+            for (int i = 0; i < numberOf; i++) {
+                result[i] = scAuth.nextInt();
+            }
+            return result;
+        } catch (FileNotFoundException e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public int[] findBooksID (int authorID) {
+        String path = "src\\main\\java\\library\\docsTrain\\" + authorID + "\\path.txt";
+        try {
+            Scanner scBook = new Scanner(new File(path));
+            int numberOf = scBook.nextInt();
+            int[] result = new int[numberOf];
+            for (int i = 0; i < numberOf; i++) {
+                result[i] = scBook.nextInt();
+            }
+            return result;
+        } catch (FileNotFoundException e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public int[] findDocsID (int authorID, int bookID) {
+        String path = "src\\main\\java\\library\\docsTrain\\" + authorID + "\\" + bookID + "\\path.txt";
+        try {
+            Scanner scDoc = new Scanner(new File(path));
+            int numberOf = scDoc.nextInt();
+            int[] result = new int[numberOf];
+            for (int i = 0; i < numberOf; i++) {
+                result[i] = scDoc.nextInt();
+            }
+            return result;
+        } catch (FileNotFoundException e){
+            e.printStackTrace();
+        }
+        return null;
+    }
     /**
      * Created by tokar on 16.09.2016.
      */
@@ -151,4 +217,7 @@ public class Library {
             return "BookID: " + id + System.lineSeparator() + "BookName: " + name + System.lineSeparator();
         }
     }
+
+
+
 }
