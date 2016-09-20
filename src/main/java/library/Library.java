@@ -1,5 +1,7 @@
 package library;
 
+import Matrix.Matrix;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -25,7 +27,7 @@ public class Library {
     private ArrayList<Author> authors;
     private ArrayList<TextSample> trainSamples;
     private ArrayList<TextSample> testSamples;
-    Library(){
+    public Library(){
         try {
 
             Scanner scLib = new Scanner(new File("src\\main\\java\\library\\DoNotTouchThisIsLibrarySettings.txt"));
@@ -63,6 +65,10 @@ public class Library {
                 authors.add(author);
             }
             scAuth.close();
+            /*
+            *   reading  samples
+            *
+             */
 
 
         } catch (FileNotFoundException e) {
@@ -77,7 +83,6 @@ public class Library {
         private int id;
         private String name;
         ArrayList<Book> books;
-
         public Author(String name, int id) {
             this.id = id;
             this.name = name;
