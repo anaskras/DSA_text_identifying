@@ -1,71 +1,41 @@
 package library;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 import java.util.TreeMap;
 
 /**
  * Created by tokar on 16.09.2016.
  */
 public class TextSample {
-    private int id;
-    private Library.Author author;
-    private Library.Book book;
-    private double [] myVector;
+    private int sampleID;
+    private int authorID;
+    private int bookID;
+    private HashMap<String, Integer> myMap;
+    private int myMapSize;
+    private int myMapWordCount;
 
-    public TextSample(int id, TreeMap fullMap, HashMap myMap) {
-        this.id = id;
-        author = null;
-        book = null;
-        TreeMap<String, Integer> treeMap = new TreeMap(fullMap);
-        treeMap.putAll(myMap);
-        if (treeMap.size() != fullMap.size()) {
-            System.out.println("Unknown words! Update Library dict!");
-            System.exit(-1);
-        }
-        myVector = new double[myMap.size()];
-        int i = 0;
-        for (Map.Entry<String, Integer> e: treeMap.entrySet()) {
-            myVector[i]=e.getValue();
+    public TextSample(String path,int authorID, int bookID, int sampleID, TreeMap fullMap) {
+        this.authorID = authorID;
+        this.bookID = bookID;
+        this.sampleID = sampleID;
+        try {
+            Scanner sc = new Scanner(new File(path));
+            myMapSize = sc.nextInt();
+            myMap = new HashMap<String, Integer>(myMapSize);
+            myMapWordCount = sc.nextInt();
+            for (int i = 0; i< myMapSize; i++) {
+                String word = sc.next();
+                Integer count = sc.nextInt();
+                myMap.put(word, count);
+                count += (Integer) fullMap.get(word);
+                fullMap.put(word, count);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
     }
-
-    public TextSample(Library.Author author, int id, TreeMap fullMap, HashMap myMap) {
-        this.id = id;
-        this.author = author;
-        book = null;
-        TreeMap<String, Integer> treeMap = new TreeMap(fullMap);
-        treeMap.putAll(myMap);
-        if (treeMap.size() != fullMap.size()) {
-            System.out.println("Unknown words! Update Library dict!");
-            System.exit(-1);
-        }
-        myVector = new double[myMap.size()];
-        int i = 0;
-        for (Map.Entry<String, Integer> e : treeMap.entrySet()) {
-            myVector[i] = e.getValue();
-        }
-    }
-
-    public TextSample(Library.Book book, int id, TreeMap fullMap, HashMap myMap) {
-        this.id = id;
-        this.author = book.getAuthor();
-        this.book = book;
-        TreeMap<String, Integer> treeMap = new TreeMap(fullMap);
-        treeMap.putAll(myMap);
-        if (treeMap.size() != fullMap.size()) {
-            System.out.println("Unknown words! Update Library dict!");
-            System.exit(-1);
-        }
-        myVector = new double[myMap.size()];
-        int i = 0;
-        for (Map.Entry<String, Integer> e : treeMap.entrySet()) {
-            myVector[i] = e.getValue();
-        }
-    }
-
-    public int getId() {
-        return id;
-    }
-
 }

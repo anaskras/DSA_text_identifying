@@ -27,5 +27,6 @@ public class Testing {
         System.out.print(new Matrix(myMatrix.MahalanobisDistance()));
 
         //System.out.println(myMatrix.inverse().toString());
+        // (n * (n-1)) / 2 + i * (rows - n) + j - n
     }
 }
