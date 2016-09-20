@@ -16,6 +16,7 @@ public class Testing {
             e.printStackTrace();
         }
 
+        //myMatrix.averageColVector();
         double[][] matr2 = myMatrix.euclideanDistance();
         Matrix dist = new Matrix(matr2);
         System.out.print(dist.toString());

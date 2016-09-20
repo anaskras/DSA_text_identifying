@@ -28,6 +28,10 @@ public class Matrix {
     private double euclDiametr;
     private boolean needToCalcEuclDist;
 
+    private double[][] euclideanDistancesToAverVect;
+    private double euclDiametrToAverVect;
+    private boolean needToCalcEuclDistToAverVect;
+
     private double determinant;
     private boolean needToCalcDet;
 
@@ -44,6 +48,9 @@ public class Matrix {
         averageVector = null;
         needToCalcCovMatr = true;
         covarianceMartix = null;
+        euclideanDistancesToAverVect = null;
+        euclDiametrToAverVect = 0;
+        needToCalcEuclDistToAverVect = true;
     }
 
     public Matrix(Scanner inputStream) {
@@ -63,6 +70,9 @@ public class Matrix {
         averageVector = null;
         needToCalcCovMatr = true;
         covarianceMartix = null;
+        euclideanDistancesToAverVect = null;
+        euclDiametrToAverVect = 0;
+        needToCalcEuclDistToAverVect = true;
     }
 
     public Matrix(int rows, int cols, Scanner inputStream) {
@@ -82,6 +92,9 @@ public class Matrix {
         averageVector = null;
         needToCalcCovMatr = true;
         covarianceMartix = null;
+        euclideanDistancesToAverVect = null;
+        euclDiametrToAverVect = 0;
+        needToCalcEuclDistToAverVect = true;
     }
 
     /**
@@ -103,6 +116,9 @@ public class Matrix {
         averageVector = null;
         needToCalcCovMatr = true;
         covarianceMartix = null;
+        euclideanDistancesToAverVect = null;
+        euclDiametrToAverVect = 0;
+        needToCalcEuclDistToAverVect = true;
     }
 
     private double[][] inverse(double[][] m) {
@@ -321,6 +337,18 @@ public class Matrix {
         return rows;
     }
 
+    public double[] getRow(int i){
+        return matr[i];
+    }
+
+    public double[] getCol(int j) {
+        double[] result = new double[matr[0].length];
+        for (int i = 0; i < result.length; i++){
+            result[i] = matr[i][j];
+        }
+        return result;
+    }
+
     public double get(int row, int col) {
         return matr[row][col];
     }
@@ -473,6 +501,47 @@ public class Matrix {
         return Math.sqrt(euclideanDistances[0][n * (n - 1) / 2 + i * (euclideanDistances.length - n) + j - n]);
     }
 
+    public static double euclideanSquareDistance(double[] myVector, double[] averageVector) {
+        double euclideanDistance = 0;
+        for (int i = 0; i < myVector.length; i++) {
+            euclideanDistance += (myVector[i] - averageVector[i]) * (myVector[i] - averageVector[i]);
+        }
+        return euclideanDistance;
+    }
+
+    public static double euclidianDistance(double[] myVector, double[] averageVector){
+        return Math.sqrt(euclidianDistance(myVector, averageVector));
+    }
+
+    public double[] euclideanSquareDistToAverVect() {
+        if (needToCalcEuclDistToAverVect) {
+            euclideanDistancesToAverVect = new double[1][rows];
+            euclDiametrToAverVect = 0;
+            for (int i = 0; i < rows; i++) {
+                for (int k = 0; k < cols; k++) {
+                    euclideanDistancesToAverVect[0][i] += (matr[i][k] - averageVector[k]) * (matr[i][k] - averageVector[k]);
+                }
+                if (euclideanDistancesToAverVect[0][i] > euclDiametrToAverVect) {
+                    euclDiametrToAverVect = euclideanDistancesToAverVect[0][i];
+                }
+            }
+        }
+        needToCalcEuclDistToAverVect = false;
+        return euclideanDistancesToAverVect[0];
+    }
+
+    public double[] euclidianDistanceToAverVect(){
+        if (needToCalcEuclDistToAverVect){
+            euclideanSquareDistToAverVect();
+        }
+        double [][] eucl = new double[1][euclideanDistancesToAverVect[0].length];
+        eucl[0] = euclideanDistancesToAverVect[0].clone();
+        for (int i = 0; i < eucl[0].length; i++){
+            Math.sqrt(eucl[0][i]);
+        }
+        return eucl[0];
+    }
+
     public double[] averageVector() {
         if (needToCalcAverVect) {
             averageVector = new double[cols];
@@ -486,6 +555,14 @@ public class Matrix {
         return averageVector;
     }
 
+    private double covariance(int first, int second){
+        double cov = 0;
+        for (int i = 0; i < matr.length; i++){
+            cov += matr[i][first] * matr[i][second];
+        }
+        cov /= matr.length;
+        return cov;
+    }
     private double covariance(double [][] matrix, int first, int second){
         double cov = 0;
         for (int i = 0; i < matrix.length; i++){
