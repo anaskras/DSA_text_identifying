@@ -500,17 +500,44 @@ public class Matrix {
         return Math.sqrt(euclideanDistances[n * (n - 1) / 2 + i * (euclideanDistances.length - n) + j - n]);
     }
 
-    public static double euclideanSquareDistance(double[] myVector, double[] averageVector) {
+    /*public static double euclideanSquareDistance(double[] myVector, double[] averageVector) {
         double euclideanDistance = 0;
         for (int i = 0; i < myVector.length; i++) {
             euclideanDistance += (myVector[i] - averageVector[i]) * (myVector[i] - averageVector[i]);
         }
         return euclideanDistance;
-    }
+    }*/
 
     public static double euclidianDistance(double[] myVector, double[] averageVector){
-        return Math.sqrt(euclideanSquareDistance(myVector, averageVector));
+        return minkowskiDistance(myVector, averageVector, 2);
     }
+    public static double minkowskiPowDistance(double[] myVector, double[] averageVector, int pow) {
+        double minkowskiDistance = 0;
+        for (int i = 0; i < myVector.length; i++) {
+            minkowskiDistance += Math.pow(Math.abs(myVector[i] - averageVector[i]), pow);
+        }
+        return minkowskiDistance;
+    }
+
+    public static double minkowskiDistance(double[] myVector, double[] averageVector, int pow){
+        return Math.pow(minkowskiPowDistance(myVector, averageVector, pow), (1.0 / pow));
+    }
+
+    public static double cityBlockDistance(double[] myVector, double[] averageVector){
+        return minkowskiDistance(myVector, averageVector, 1);
+    }
+    //special case of Minkowski distance with pow = infinitive
+    public static double chebychevDistance(double[] myVector, double[] averageVector) {
+        double chebychevDistance = 0;
+        for (int i = 0; i < myVector.length; i++) {
+            double temp = Math.abs(myVector[i] - averageVector[i]);
+            if (temp > chebychevDistance) {
+                chebychevDistance = temp;
+            }
+        }
+        return chebychevDistance;
+    }
+
 
     public double[] euclideanSquareDistToAverVect() {
         if (needToCalcEuclDistToAverVect) {

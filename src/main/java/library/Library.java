@@ -114,6 +114,9 @@ public class Library {
             double[] distances = new double[authorMatrix.size()];
             for (int j = 0; j < authorMatrix.size(); j++) {
                 distances[j] = Matrix.euclidianDistance(sampleTests.getRow(i), authorMatrix.get(j).averageVector());
+                //distances[j] = Matrix.cityBlockDistance(sampleTests.getRow(i), authorMatrix.get(j).averageVector());
+                //distances[j] = Matrix.chebychevDistance(sampleTests.getRow(i), authorMatrix.get(j).averageVector());
+                //distances[j] = Matrix.minkowskiDistance(sampleTests.getRow(i), authorMatrix.get(j).averageVector(), 3);
                 if ((distances[j] < minDist) && (authorMatrix.get(j).getEuclDiametrToAverVect() >= distances[j])) {
                     minDist = distances[j];
                     authorID = j + 1;
