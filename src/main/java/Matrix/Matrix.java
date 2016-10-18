@@ -18,39 +18,10 @@ public class Matrix {
     private int rows;
     private int cols;
 
-    private double[] averageVector;
-    private boolean needToCalcAverVect;
-
-    private double[][] covarianceMartix;
-    private boolean needToCalcCovMatr;
-
-    private double[] euclideanDistances;
-    private double euclDiametr;
-    private boolean needToCalcEuclDist;
-
-    private double[] euclideanDistancesToAverVect;
-    private double euclDiametrToAverVect;
-    private boolean needToCalcEuclDistToAverVect;
-
-    private double determinant;
-    private boolean needToCalcDet;
-
-
     public Matrix(double[][] matrix) {
         this.matr = matrix;
         rows = matr.length;
         cols = matr[0].length;
-        needToCalcDet = true;
-        needToCalcEuclDist = true;
-        euclideanDistances = null;
-        euclDiametr = 0;
-        needToCalcAverVect = true;
-        averageVector = null;
-        needToCalcCovMatr = true;
-        covarianceMartix = null;
-        euclideanDistancesToAverVect = null;
-        euclDiametrToAverVect = 0;
-        needToCalcEuclDistToAverVect = true;
     }
 
     public Matrix(Scanner inputStream) {
@@ -62,17 +33,6 @@ public class Matrix {
                 matr[i][j] = inputStream.nextDouble();
             }
         }
-        needToCalcDet = true;
-        needToCalcEuclDist = true;
-        euclideanDistances = null;
-        euclDiametr = 0;
-        needToCalcAverVect = true;
-        averageVector = null;
-        needToCalcCovMatr = true;
-        covarianceMartix = null;
-        euclideanDistancesToAverVect = null;
-        euclDiametrToAverVect = 0;
-        needToCalcEuclDistToAverVect = true;
     }
 
     public Matrix(int rows, int cols, Scanner inputStream) {
@@ -84,17 +44,6 @@ public class Matrix {
         }
         this.rows = rows;
         this.cols = cols;
-        needToCalcDet = true;
-        needToCalcEuclDist = true;
-        euclideanDistances = null;
-        euclDiametr = 0;
-        needToCalcAverVect = true;
-        averageVector = null;
-        needToCalcCovMatr = true;
-        covarianceMartix = null;
-        euclideanDistancesToAverVect = null;
-        euclDiametrToAverVect = 0;
-        needToCalcEuclDistToAverVect = true;
     }
 
     /**
@@ -107,18 +56,6 @@ public class Matrix {
         }
         cols = N;
         rows = N;
-        determinant = 1;
-        needToCalcDet = false;
-        needToCalcEuclDist = true;
-        euclideanDistances = null;
-        euclDiametr = 0;
-        needToCalcAverVect = true;
-        averageVector = null;
-        needToCalcCovMatr = true;
-        covarianceMartix = null;
-        euclideanDistancesToAverVect = null;
-        euclDiametrToAverVect = 0;
-        needToCalcEuclDistToAverVect = true;
     }
 
     private double[][] inverse(double[][] m) {
@@ -171,7 +108,7 @@ public class Matrix {
     }
 
     //Matrix multiplication
-    private double[][] multiply(double[][] m1, double[][] m2) {
+    private double[][] multiply (double[][] m1, double[][] m2) {
         if (m1[0].length != m2.length) {
             return null;
         } else {
@@ -187,7 +124,7 @@ public class Matrix {
         }
     }
 
-    private double[] multiply(double[] v, double[][] m) {
+    private double[] multiply (double[] v, double[][] m) {
         if (v.length != m.length) {
             return null;
         } else {
@@ -201,7 +138,7 @@ public class Matrix {
         }
     }
 
-    private double[] multiply(double[][] m, double[] v) {
+    private double[] multiply (double[][] m, double[] v) {
         if (m[0].length != v.length) {
             return null;
         } else {
@@ -386,7 +323,6 @@ public class Matrix {
         if (cols != matr2.getRows()) {
             return null;
         } else {
-            needToCalcDet = true;
             double[][] ans = new double[rows][matr2.getCols()];
             for (int i = 0; i < rows; i++) {
                 for (int j = 0; j < matr2.getCols(); j++) {
@@ -451,62 +387,47 @@ public class Matrix {
 
 
     public double det() {
-        if (needToCalcDet) {
-            determinant = det(matr);
-            needToCalcDet = false;
+        return det(matr);
+    }
+
+    public double[] averageVector() {
+        double[] averageVector = new double[cols];
+        for (int j = 0; j < cols; j++) {
+            for (int i = 0; i < rows; i++)
+                averageVector[j] += matr[i][j];
+            averageVector[j] /= rows;
         }
-        return determinant;
+        return averageVector;
     }
 
     /**
      * @return if (i != j) double[i][j] - distance between i and j rows
      */
-    public double[] euclideanSquareDistance() {
-        if (needToCalcEuclDist) {
-            euclideanDistances = new double[rows * (rows - 1) / 2];
-            euclDiametr = 0;
-            int p = 0;
-            for (int i = 0; i < rows; i++) {
-                for (int j = i + 1; j < rows; j++) {
-                    for (int k = 0; k < cols; k++) {
-                        euclideanDistances[p] += (matr[i][k] - matr[j][k]) * (matr[i][k] - matr[j][k]);
-                    }
-                    if (euclideanDistances[p] > euclDiametr) {
-                        euclDiametr = euclideanDistances[p];
-                    }
-                    p++;
-                }
-
+    private double[] euclideanSquareDistance() {
+        double[] euclideanDistances = new double[rows * (rows - 1) / 2];
+        int p = 0;
+        for (int i = 0; i < rows; i++) {
+            for (int j = i + 1; j < rows; j++) {
+                euclideanDistances[p] = minkowskiPowDistance(matr[i], matr[j], 2);
+                p++;
             }
-            needToCalcEuclDist = false;
         }
         return euclideanDistances;
     }
 
     public double[] euclideanDistance() {
-        if (needToCalcEuclDist) {
-            euclideanSquareDistance();
-        }
-        double[] result = euclideanDistances.clone();
+        double[] result = euclideanSquareDistance();
         for (int i = 0; i < result.length; i++) {
             result[i] = Math.sqrt(result[i]);
         }
-
         return result;
     }
 
     public double eucDistBetween(int i, int j){
+        double[] euclideanDistances = euclideanDistance();
         int n = i + 2;
         return Math.sqrt(euclideanDistances[n * (n - 1) / 2 + i * (euclideanDistances.length - n) + j - n]);
     }
-
-    /*public static double euclideanSquareDistance(double[] myVector, double[] averageVector) {
-        double euclideanDistance = 0;
-        for (int i = 0; i < myVector.length; i++) {
-            euclideanDistance += (myVector[i] - averageVector[i]) * (myVector[i] - averageVector[i]);
-        }
-        return euclideanDistance;
-    }*/
 
     public static double euclidianDistance(double[] myVector, double[] averageVector){
         return minkowskiDistance(myVector, averageVector, 2);
@@ -538,58 +459,14 @@ public class Matrix {
         return chebychevDistance;
     }
 
-
-    public double[] euclideanSquareDistToAverVect() {
-        if (needToCalcEuclDistToAverVect) {
-            euclideanDistancesToAverVect = new double[rows];
-            euclDiametrToAverVect = 0;
-            for (int i = 0; i < rows; i++) {
-                for (int k = 0; k < cols; k++) {
-                    euclideanDistancesToAverVect[i] += (matr[i][k] - averageVector[k]) * (matr[i][k] - averageVector[k]);
-                }
-                if (euclideanDistancesToAverVect[i] > euclDiametrToAverVect) {
-                    euclDiametrToAverVect = euclideanDistancesToAverVect[i];
-                }
+    public double getDiameter(double[] someVector) {
+        double diam = 0;
+        for (int i = 0; i < someVector.length; i++) {
+            if (someVector[i] > diam) {
+                diam = someVector[i];
             }
         }
-        needToCalcEuclDistToAverVect = false;
-        return euclideanDistancesToAverVect;
-    }
-
-    public double[] euclidianDistToAverVect(){
-        if (needToCalcEuclDistToAverVect){
-            euclideanSquareDistToAverVect();
-        }
-        double [] eucl  = euclideanDistancesToAverVect.clone();
-        for (int i = 0; i < eucl.length; i++){
-            eucl[i] = Math.sqrt(eucl[i]);
-        }
-        return eucl;
-    }
-    public double getSquareEuclDiametrToAverVect() {
-        if (needToCalcEuclDistToAverVect) {
-            euclideanSquareDistToAverVect();
-        }
-        return euclDiametrToAverVect;
-    }
-    public double getEuclDiametrToAverVect() {
-        if (needToCalcEuclDistToAverVect) {
-            euclideanSquareDistToAverVect();
-        }
-        return Math.sqrt(euclDiametrToAverVect);
-    }
-
-    public double[] averageVector() {
-        if (needToCalcAverVect) {
-            averageVector = new double[cols];
-            for (int j = 0; j < cols; j++) {
-                for (int i = 0; i < rows; i++)
-                    averageVector[j] += matr[i][j];
-                averageVector[j] /= rows;
-            }
-            needToCalcAverVect = false;
-        }
-        return averageVector;
+        return diam;
     }
 
     private double covariance(int first, int second){
@@ -614,73 +491,51 @@ public class Matrix {
     }
 
     public double[][] covarianceMatrix() {
-        /*if (needToCalcAverVect) {
-            this.averageVector();
-        }*/
         /*System.out.println("built in cov matrix:");
         RealMatrix cov = new Covariance(matr).getCovarianceMatrix();
         System.out.print(new Matrix(cov.getData()));*/
         //System.out.println("built in invcov matrix:");
-       // System.out.print(new Matrix( new LUDecomposition(cov).getSolver().getInverse().getData()));
-        if (needToCalcCovMatr) {
-            /*covarianceMartix = new double[cols][cols];
-            for (int i = 0; i < rows; i++) {
-                for (int j = i; j < rows; j++) {
-                    for (int k = 0; k < cols; k++) {
-                        covarianceMartix[i][j] += (matr[i][k] - averageVector[k]) * (matr[j][k] - averageVector[k]);
-                    }
-                    covarianceMartix[j][i] = covarianceMartix[i][j];
-                }
-            }
-            for (int i = 0; i < cols; i++) {
-                for (int j = 0; j < cols; j++) {
-                    covarianceMartix[i][j] /= (rows - 1);
-                }
-            }*/
+        // System.out.print(new Matrix( new LUDecomposition(cov).getSolver().getInverse().getData()));
 
-            //creating the copy of 'matr'
-            double[][] copyMatr = new double[rows][];
-            for (int i = 0; i < rows; i++){
-                copyMatr[i] = matr[i].clone();
-            }
 
-            double[] mean = new double[matr[0].length];
-            //Arrays.fill(mean, 0);
-            //calculating the mean (average vector)
-            for (int i = 0; i < copyMatr.length; i++){
-                for (int j = 0; j < copyMatr[i].length; j++){
-                    mean[j] += copyMatr[i][j];
-                }
-            }
+        //creating the copy of 'matr'
+        double[][] copyMatr = new double[rows][];
+        for (int i = 0; i < rows; i++) {
+            copyMatr[i] = matr[i].clone();
+        }
 
-            for (int i = 0; i < mean.length; i++){
-                mean[i] /= copyMatr.length;
+        double[] mean = new double[matr[0].length];
+        //Arrays.fill(mean, 0);
+        //calculating the mean (average vector)
+        for (int i = 0; i < copyMatr.length; i++) {
+            for (int j = 0; j < copyMatr[i].length; j++) {
+                mean[j] += copyMatr[i][j];
             }
+        }
 
-            //extracting the mean
-            for (int i = 0; i < copyMatr.length; i++){
-                for (int j = 0; j < copyMatr[i].length; j++){
-                    copyMatr[i][j] -= mean[j];
-                }
+        for (int i = 0; i < mean.length; i++) {
+            mean[i] /= copyMatr.length;
+        }
+
+        //extracting the mean
+        for (int i = 0; i < copyMatr.length; i++) {
+            for (int j = 0; j < copyMatr[i].length; j++) {
+                copyMatr[i][j] -= mean[j];
             }
+        }
 
-            //double[][] covMatrix = new double[copyMatr[0].length][copyMatr[0].length];
-            covarianceMartix = new double[copyMatr[0].length][copyMatr[0].length];
-            for (int i = 0; i < covarianceMartix.length; i++){
-                for(int j = 0; j < covarianceMartix.length; j++){
-                    covarianceMartix[i][j] = covariance(copyMatr,i, j);
-                }
+        //double[][] covMatrix = new double[copyMatr[0].length][copyMatr[0].length];
+        double[][] covarianceMartix = new double[copyMatr[0].length][copyMatr[0].length];
+        for (int i = 0; i < covarianceMartix.length; i++) {
+            for (int j = 0; j < covarianceMartix.length; j++) {
+                covarianceMartix[i][j] = covariance(copyMatr, i, j);
             }
-
-            needToCalcCovMatr = false;
         }
         return covarianceMartix;
     }
 
     public double[][] MahalanobisDistance() {
-        if (needToCalcCovMatr) {
-            this.covarianceMatrix();
-        }
+        double[][] covarianceMartix = covarianceMatrix();
 
         double[][] result = new double[cols][cols];
         double[][] ones = new double[cols][cols];

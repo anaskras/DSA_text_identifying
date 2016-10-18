@@ -117,7 +117,7 @@ public class Library {
                 //distances[j] = Matrix.cityBlockDistance(sampleTests.getRow(i), authorMatrix.get(j).averageVector());
                 //distances[j] = Matrix.chebychevDistance(sampleTests.getRow(i), authorMatrix.get(j).averageVector());
                 //distances[j] = Matrix.minkowskiDistance(sampleTests.getRow(i), authorMatrix.get(j).averageVector(), 3);
-                if ((distances[j] < minDist) && (authorMatrix.get(j).getEuclDiametrToAverVect() >= distances[j])) {
+                if ((distances[j] < minDist) && (authorMatrix.get(j).getDiameter(authorMatrix.get(j).euclideanDistance()) >= distances[j])) {
                     minDist = distances[j];
                     authorID = j + 1;
                 }
