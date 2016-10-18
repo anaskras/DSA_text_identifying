@@ -4,6 +4,7 @@
     <list default="true" id="ea9ff3ab-80b8-4bd2-a95e-48dcffff9e5d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Matrix/Matrix.java" afterPath="$PROJECT_DIR$/src/main/java/Matrix/Matrix.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Matrix/Testing.java" afterPath="$PROJECT_DIR$/src/main/java/Matrix/Testing.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/library/Library.java" afterPath="$PROJECT_DIR$/src/main/java/library/Library.java" />
     </list>
     <ignored path="DSA_text_identifying.iws" />
@@ -30,8 +31,8 @@
       <file leaf-file-name="Library.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/library/Library.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="115" column="49" selection-start-line="115" selection-start-column="49" selection-end-line="115" selection-end-column="49" />
+            <state relative-caret-position="201">
+              <caret line="115" column="89" selection-start-line="115" selection-start-column="89" selection-end-line="115" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,8 +43,8 @@
       <file leaf-file-name="Matrix.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/Matrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="473" column="41" selection-start-line="473" selection-start-column="41" selection-end-line="473" selection-end-column="41" />
+            <state relative-caret-position="117">
+              <caret line="445" column="25" selection-start-line="445" selection-start-column="25" selection-end-line="445" selection-end-column="25" />
               <folding>
                 <element signature="method#Matrix#3;class#Matrix#0" expanded="false" />
                 <element signature="method#inverse#0;class#Matrix#0" expanded="false" />
@@ -65,7 +66,23 @@
                 <element signature="method#toString#0;class#Matrix#0" expanded="false" />
                 <element signature="e#11334#11335#0" expanded="true" />
                 <element signature="e#11366#11367#0" expanded="true" />
+                <element signature="e#12207#12208#0" expanded="true" />
+                <element signature="e#12250#12251#0" expanded="true" />
+                <element signature="e#12297#12298#0" expanded="true" />
+                <element signature="e#12340#12341#0" expanded="true" />
+                <element signature="method#minkowskiDistBetween#0;class#Matrix#0" expanded="false" />
+                <element signature="method#chebychevDistBetween#0;class#Matrix#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Testing.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/Testing.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,7 +155,6 @@
         <option value="$PROJECT_DIR$/src/main/java/library/DoNotTuchThisIsLibrarySettings.txt" />
         <option value="$PROJECT_DIR$/src/main/java/PreparingDocuments.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/Matrix/Testing.java" />
         <option value="$PROJECT_DIR$/src/main/java/Matrix/test.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/library/AnalysisOfSamples.java" />
@@ -149,8 +165,9 @@
         <option value="$PROJECT_DIR$/src/main/java/library/TextSample.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/library/Answer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/library/Library.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Matrix/Testing.java" />
         <option value="$PROJECT_DIR$/src/main/java/Matrix/Matrix.java" />
+        <option value="$PROJECT_DIR$/src/main/java/library/Library.java" />
       </list>
     </option>
   </component>
@@ -629,7 +646,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476651163067</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="matrix refactor">
+      <created>1476799983872</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1476799983872</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -641,12 +665,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8055556" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75490195" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12651414" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1388889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14705883" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13464448" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -730,7 +754,8 @@
     <MESSAGE value="classifyToAuthor Interface" />
     <MESSAGE value="version 1.0 alpha done" />
     <MESSAGE value="minkowski, cityblock, chebychev distances added" />
-    <option name="LAST_COMMIT_MESSAGE" value="minkowski, cityblock, chebychev distances added" />
+    <MESSAGE value="matrix refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="matrix refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1017,14 +1042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/Testing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/library/sourceTextsTrain/Authors.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1087,10 +1104,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/Testing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Matrix/Matrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="473" column="41" selection-start-line="473" selection-start-column="41" selection-end-line="473" selection-end-column="41" />
+        <state relative-caret-position="117">
+          <caret line="445" column="25" selection-start-line="445" selection-start-column="25" selection-end-line="445" selection-end-column="25" />
           <folding>
             <element signature="method#Matrix#3;class#Matrix#0" expanded="false" />
             <element signature="method#inverse#0;class#Matrix#0" expanded="false" />
@@ -1112,14 +1137,20 @@
             <element signature="method#toString#0;class#Matrix#0" expanded="false" />
             <element signature="e#11334#11335#0" expanded="true" />
             <element signature="e#11366#11367#0" expanded="true" />
+            <element signature="e#12207#12208#0" expanded="true" />
+            <element signature="e#12250#12251#0" expanded="true" />
+            <element signature="e#12297#12298#0" expanded="true" />
+            <element signature="e#12340#12341#0" expanded="true" />
+            <element signature="method#minkowskiDistBetween#0;class#Matrix#0" expanded="false" />
+            <element signature="method#chebychevDistBetween#0;class#Matrix#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/library/Library.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="115" column="49" selection-start-line="115" selection-start-column="49" selection-end-line="115" selection-end-column="49" />
+        <state relative-caret-position="201">
+          <caret line="115" column="89" selection-start-line="115" selection-start-column="89" selection-end-line="115" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

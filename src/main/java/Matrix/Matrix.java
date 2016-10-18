@@ -403,35 +403,38 @@ public class Matrix {
     /**
      * @return if (i != j) double[i][j] - distance between i and j rows
      */
-    private double[] euclideanSquareDistance() {
+    public double[] minkowskiDistance(int pow) {
         double[] euclideanDistances = new double[rows * (rows - 1) / 2];
         int p = 0;
         for (int i = 0; i < rows; i++) {
             for (int j = i + 1; j < rows; j++) {
-                euclideanDistances[p] = minkowskiPowDistance(matr[i], matr[j], 2);
+                euclideanDistances[p] = minkowskiDistance(matr[i], matr[j], pow);
                 p++;
             }
         }
         return euclideanDistances;
     }
-
+    
     public double[] euclideanDistance() {
-        double[] result = euclideanSquareDistance();
-        for (int i = 0; i < result.length; i++) {
-            result[i] = Math.sqrt(result[i]);
+        return minkowskiDistance(2);
+    }
+    
+    public double[] cityBlockDistance() {
+        return minkowskiDistance(1);
+    }
+    
+    public double[] chebychevDistance() {
+        double[] chebychevDistances = new double[rows * (rows - 1) / 2];
+        int p = 0;
+        for (int i = 0; i < rows; i++) {
+            for (int j = i + 1; j < rows; j++) {
+                chebychevDistances[p] = chebychevDistance(matr[i], matr[j]);
+                p++;
+            }
         }
-        return result;
+        return chebychevDistances;
     }
 
-    public double eucDistBetween(int i, int j){
-        double[] euclideanDistances = euclideanDistance();
-        int n = i + 2;
-        return Math.sqrt(euclideanDistances[n * (n - 1) / 2 + i * (euclideanDistances.length - n) + j - n]);
-    }
-
-    public static double euclidianDistance(double[] myVector, double[] averageVector){
-        return minkowskiDistance(myVector, averageVector, 2);
-    }
     public static double minkowskiPowDistance(double[] myVector, double[] averageVector, int pow) {
         double minkowskiDistance = 0;
         for (int i = 0; i < myVector.length; i++) {
@@ -444,6 +447,9 @@ public class Matrix {
         return Math.pow(minkowskiPowDistance(myVector, averageVector, pow), (1.0 / pow));
     }
 
+    public static double euclidianDistance(double[] myVector, double[] averageVector){
+        return minkowskiDistance(myVector, averageVector, 2);
+    }
     public static double cityBlockDistance(double[] myVector, double[] averageVector){
         return minkowskiDistance(myVector, averageVector, 1);
     }
@@ -457,6 +463,26 @@ public class Matrix {
             }
         }
         return chebychevDistance;
+    }
+    
+    public double minkowskiDistBetween(int i, int j, int pow){
+        double[] minkowskiDistances = minkowskiDistance(pow);
+        int n = i + 2;
+        return minkowskiDistances[n * (n - 1) / 2 + i * (minkowskiDistances.length - n) + j - n];
+    }
+
+    public double euclidianDistBetween (int i, int j) {
+        return minkowskiDistBetween(i, j, 2);
+    }
+
+    public double cityBlockDistBetween (int i, int j) {
+        return minkowskiDistBetween(i, j, 1);
+    }
+
+    public double chebychevDistBetween (int i, int j) {
+        double[] chebychevDistances = chebychevDistance();
+        int n = i + 2;
+        return chebychevDistances[n * (n - 1) / 2 + i * (chebychevDistances.length - n) + j - n];
     }
 
     public double getDiameter(double[] someVector) {

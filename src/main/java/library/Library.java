@@ -116,10 +116,10 @@ public class Library {
                 distances[j] = Matrix.euclidianDistance(sampleTests.getRow(i), authorMatrix.get(j).averageVector());
                 //distances[j] = Matrix.cityBlockDistance(sampleTests.getRow(i), authorMatrix.get(j).averageVector());
                 //distances[j] = Matrix.chebychevDistance(sampleTests.getRow(i), authorMatrix.get(j).averageVector());
-                //distances[j] = Matrix.minkowskiDistance(sampleTests.getRow(i), authorMatrix.get(j).averageVector(), 3);
+                //distances[j] = Matrix.minkowskiDistance(sampleTests.getRow(i), authorMatrix.get(j).averageVector(), 1);
                 if ((distances[j] < minDist) && (authorMatrix.get(j).getDiameter(authorMatrix.get(j).euclideanDistance()) >= distances[j])) {
                     minDist = distances[j];
-                    authorID = j + 1;
+                    authorID = j + 1;//
                 }
             }
             result.add(new Answer(authorID, distances));
